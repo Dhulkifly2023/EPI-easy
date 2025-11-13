@@ -1,0 +1,638 @@
+/* ========================================
+   SOBRE.CSS - APENAS HEADER (NAVBAR)
+   Reutiliza o estilo premium do style.css
+   ======================================== */
+
+
+/* GLOBAL PARA HEADER */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+
+a,
+a:hover,
+a:visited,
+a:active,
+a:focus {
+    text-decoration: none !important;
+    outline: none !important;
+}
+
+:root {
+    --bg-color: #f8fcff;
+    --text-color: #22100d;
+    --main-color: #2fcdff;
+    --big-font: 4.2rem;
+    --h2-font: 2.8rem;
+    --p-font: 1.1rem;
+}
+
+
+/* ========================================
+   HEADER PREMIUM (REUTILIZADO)
+   ======================================== */
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-bottom: 1px solid rgba(47, 205, 255, 0.2);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+    z-index: 1000;
+    transition: all 0.4s ease;
+    height: 80px;
+}
+
+.header.scrolled,
+.header.sticky {
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+    height: 70px;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+
+/* Logo */
+
+.logo h1 {
+    font-size: 2.3rem;
+    font-weight: 900;
+    background: linear-gradient(135deg, #2fcdff, #1ba8d4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin: 0;
+    letter-spacing: -1px;
+    transition: 0.3s;
+}
+
+.logo:hover h1 {
+    transform: scale(1.05);
+}
+
+
+/* Menu */
+
+.menu {
+    display: flex;
+    gap: 35px;
+    align-items: center;
+}
+
+.menu a {
+    color: #333;
+    font-weight: 600;
+    font-size: 1.05rem;
+    position: relative;
+    padding: 8px 0;
+    transition: 0.3s;
+}
+
+.menu a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 3px;
+    background: linear-gradient(135deg, #2fcdff, #1ba8d4);
+    border-radius: 2px;
+    transition: 0.4s ease;
+    transform: translateX(-50%);
+}
+
+.menu a:hover {
+    color: #2fcdff;
+}
+
+.menu a:hover::before {
+    width: 100%;
+}
+
+.menu a.active {
+    color: #2fcdff;
+}
+
+.menu a.active::before {
+    width: 100%;
+}
+
+
+/* Ícones */
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.icon-link {
+    position: relative;
+    color: #555;
+    font-size: 1.6rem;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.icon-link:hover {
+    color: #2fcdff;
+    transform: scale(1.15);
+}
+
+.icon-link .tooltip {
+    position: absolute;
+    bottom: -35px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #333;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-size: 0.8rem;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.icon-link:hover .tooltip {
+    opacity: 1;
+    bottom: -40px;
+}
+
+
+/* Badges */
+
+.badge-notif {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background: #e74c3c;
+    color: white;
+    font-size: 0.7rem;
+    font-weight: 700;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 8px rgba(231, 76, 60, 0.3);
+}
+
+
+/* Notificação Dropdown */
+
+.notification {
+    position: relative;
+}
+
+.notif-dropdown {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: white;
+    min-width: 300px;
+    border-radius: 16px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+    padding: 15px;
+    display: none;
+    z-index: 100;
+    border: 1px solid #eee;
+}
+
+.notif-dropdown.show {
+    display: block;
+    animation: fadeIn 0.3s ease;
+}
+
+.notif-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 0;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 0.95rem;
+}
+
+.notif-item:last-child {
+    border-bottom: none;
+}
+
+.notif-item i {
+    font-size: 1.4rem;
+}
+
+.notif-item p {
+    margin: 0;
+    color: #444;
+    line-height: 1.4;
+}
+
+.notif-item strong {
+    color: #222;
+}
+
+
+/* Hamburger Menu */
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.hamburger span {
+    width: 28px;
+    height: 3px;
+    background: #333;
+    border-radius: 3px;
+    transition: 0.3s;
+}
+
+.hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 6px);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(8px, -8px);
+}
+
+
+/* Animação */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* ========================================
+   RESPONSIVO - MENU MOBILE
+   ======================================== */
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+    .menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: white;
+        flex-direction: column;
+        padding: 20px 5%;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        transform: translateY(-100%);
+        opacity: 0;
+        pointer-events: none;
+        transition: 0.4s ease;
+    }
+    .menu.active {
+        transform: translateY(0);
+        opacity: 1;
+        pointer-events: auto;
+    }
+    .menu a {
+        padding: 12px 0;
+        font-size: 1.1rem;
+        border-bottom: 1px solid #eee;
+    }
+    .menu a:last-child {
+        border-bottom: none;
+    }
+    .header-right {
+        gap: 15px;
+    }
+    .notif-dropdown {
+        right: 0;
+        left: auto;
+        transform: none;
+        min-width: 280px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo h1 {
+        font-size: 2rem;
+    }
+}
+
+
+/* ========================================
+   SOBRE-PAGE.CSS - ESTILO DA PÁGINA SOBRE
+   ======================================== */
+
+.sobre-hero {
+    padding: 140px 10% 80px;
+    background: linear-gradient(135deg, #f8fcff 0%, #e6f5ff 100%);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.sobre-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200"><circle cx="30" cy="30" r="8" fill="%232fcdff" opacity="0.08"/><circle cx="170" cy="170" r="8" fill="%232fcdff" opacity="0.08"/></svg>') repeat;
+    background-size: 150px;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.sobre-content {
+    position: relative;
+    z-index: 1;
+}
+
+.sobre-hero h1 {
+    font-size: 3.8rem;
+    font-weight: 900;
+    margin-bottom: 16px;
+    background: linear-gradient(135deg, #2fcdff, #1ba8d4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.sobre-hero .subtitle {
+    font-size: 1.3rem;
+    color: #555;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+
+/* Seções */
+
+.origem,
+.publico,
+.equipe,
+.cta {
+    padding: 90px 10%;
+}
+
+.origem {
+    background: #f8f9fa;
+}
+
+.publico {
+    background: white;
+}
+
+.equipe {
+    background: #f0f8ff;
+    text-align: center;
+}
+
+.cta {
+    background: linear-gradient(135deg, #2fcdff, #1ba8d4);
+    color: white;
+    text-align: center;
+    padding: 80px 10%;
+}
+
+.cta h2 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+}
+
+.cta .btn-primary {
+    background: white;
+    color: #2fcdff;
+    padding: 14px 36px;
+    border-radius: 50px;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: 0.4s;
+}
+
+.cta .btn-primary:hover {
+    background: #f0f8ff;
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(47, 205, 255, 0.4);
+}
+
+
+/* Grids */
+
+.origem-grid,
+.publico-grid {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    gap: 30px;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.origem-icon,
+.publico-icon {
+    width: 120px;
+    height: 120px;
+    background: linear-gradient(135deg, #2fcdff, #1ba8d4);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    box-shadow: 0 15px 35px rgba(47, 205, 255, 0.3);
+    animation: float 3s ease-in-out infinite;
+}
+
+.publico-grid {
+    grid-template-columns: 1fr 120px;
+}
+
+.origem-text h2,
+.publico-text h2,
+.section-title {
+    font-size: 2.2rem;
+    margin-bottom: 16px;
+    color: #222;
+}
+
+.origem-text p,
+.publico-text p {
+    font-size: 1.05rem;
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 16px;
+}
+
+.checklist {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.checklist li {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 12px;
+    font-size: 1.05rem;
+    color: #444;
+}
+
+.checklist li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: #27ae60;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.destaque {
+    background: #e6f7ff;
+    padding: 16px 20px;
+    border-left: 5px solid #2fcdff;
+    border-radius: 0 8px 8px 0;
+    font-style: italic;
+    margin-top: 20px;
+}
+
+.supervisor {
+    color: #666;
+    font-size: 1rem;
+    margin-bottom: 30px;
+}
+
+
+/* Equipe */
+
+.equipe-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 25px;
+    max-width: 1000px;
+    margin: 40px auto 0;
+}
+
+.membro {
+    background: white;
+    padding: 25px 15px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: 0.4s;
+    text-align: center;
+}
+
+.membro:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(47, 205, 255, 0.2);
+}
+
+.membro-foto {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, #e6f7ff, #d6f0ff);
+    color: #2fcdff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 15px;
+    font-size: 2rem;
+    transition: 0.4s;
+}
+
+.membro:hover .membro-foto {
+    background: linear-gradient(135deg, #2fcdff, #1ba8d4);
+    color: white;
+    transform: scale(1.1);
+}
+
+.membro h4 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #222;
+}
+
+
+/* Animação */
+
+@keyframes float {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+
+/* Responsivo */
+
+@media (max-width: 992px) {
+    .origem-grid,
+    .publico-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .publico-icon {
+        order: -1;
+        margin-bottom: 20px;
+    }
+    .sobre-hero h1 {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .sobre-hero {
+        padding: 120px 5% 60px;
+    }
+    .origem,
+    .publico,
+    .equipe,
+    .cta {
+        padding: 70px 5%;
+    }
+    .section-title,
+    .origem-text h2,
+    .publico-text h2 {
+        font-size: 1.8rem;
+    }
+}

@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula: Capacete de Segurança - EPI Easy</title>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="https://via.placeholder.com/32x32/2fcdff/ffffff?text=E" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS do site -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/modo_escuro.css">
+    <link rel="stylesheet" href="css/escuro_index.css">
+
+    <!-- CSS da aula -->
+    <link rel="stylesheet" href="css/aula-capacete.css">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container">
+            <div class="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+            <a href="index.html" class="logo">
+                <h1>EPI Easy!</h1>
+            </a>
+            <nav class="menu" id="menu">
+                <a href="index.html#home">Home</a>
+                <a href="aulas.html">Aulas</a>
+                <a href="sobre.html">Sobre</a>
+            </nav>
+
+        </div>
+    </header>
+
+    <!-- AULA -->
+    <section class="aula-section">
+        <div class="aula-title">
+            <h1>Aula-1: Capacete de Segurança</h1>
+            <p class="subtitle">Domine o uso correto com explicações detalhadas.</p>
+        </div>
+
+        <!-- CARROSSEL -->
+        <div id="aulaCarousel" class="carousel slide" data-bs-ride="false" data-bs-touch="true">
+            <div class="carousel-inner">
+
+                <!-- SLIDE 1: INTRODUÇÃO -->
+                <div class="carousel-item active">
+                    <div class="slide-intro">
+                        <div class="intro-text">
+                            <h2>Introdução ao <strong>Capacete de Segurança</strong></h2>
+                            <p>O <strong>capacete de segurança</strong> é um <strong>Equipamento de Proteção Individual (EPI)</strong> essencial para proteger a cabeça contra <strong>impactos</strong>, <strong>perfurações</strong>, <strong>choques elétricos</strong>                                e outros riscos em ambientes de trabalho como construções, indústrias e mineração.</p>
+                            <p>Ele é projetado para <strong>absorver e distribuir a energia de impactos</strong>, reduzindo o risco de lesões graves ou fatais. De acordo com normas como a <strong>NR-6</strong> no Brasil e padrões internacionais como <strong>ANSI Z89.1</strong>,
+                                o capacete deve ser <strong>certificado</strong> e adequado ao tipo de risco.</p>
+                            <p>Nesta aula, exploraremos os <strong>tipos disponíveis</strong>, como ajustá-lo corretamente para <strong>máxima eficácia</strong>, procedimentos de <strong>manutenção</strong> para prolongar sua vida útil e sinais que indicam
+                                a <strong>necessidade de substituição</strong>. Lembre-se: um capacete bem cuidado <strong>pode salvar vidas</strong>!</p>
+                        </div>
+                        <div class="intro-image">
+                            <img src="images/CAPACETE DE SEGURANÇA CONSTRUÇÃO IDEAL PARA OBRAS….jpg" alt="Capacete de Segurança">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SLIDE 2: TIPOS + CLASSES + CORES (ÚNICO) -->
+                <div class="carousel-item">
+                    <div class="slide-full">
+                        <h2>Tipos, Classes e Cores do <strong>Capacete</strong></h2>
+
+                        <!-- TIPOS POR FORMATO -->
+                        <div class="section-block">
+                            <h3 class="section-title"><i class='bx bx-hard-hat'></i> Tipos por Formato</h3>
+                            <div class="tipos-grid">
+                                <div class="tipo-card">
+                                    <div class="tipo-icon">1</div>
+                                    <h4><strong>Aba Total</strong></h4>
+                                    <p>Tem formato de <strong>chapéu</strong>. Sua aba abrange <strong>todo o casco</strong>, proporcionando maior proteção à <strong>face, pescoço e ombros</strong>.</p>
+                                    <div class="tipo-imagem">
+                                        <img src="images/capa-com-aba-total.jpg" alt="Capacete Aba Total">
+                                    </div>
+                                </div>
+                                <div class="tipo-card">
+                                    <div class="tipo-icon">2</div>
+                                    <h4><strong>Aba Central</strong></h4>
+                                    <p>Semelhante a um <strong>boné</strong>. Sua aba frontal protege os <strong>olhos e a face</strong> contra sol, chuva e detritos.</p>
+                                    <div class="tipo-imagem">
+                                        <img src="images/capacete-com-aba-frontal.jpg" alt="Capacete Aba Central">
+                                    </div>
+                                </div>
+                                <div class="tipo-card">
+                                    <div class="tipo-icon">3</div>
+                                    <h4><strong>Sem Aba</strong></h4>
+                                    <p>Também conhecido como <strong>capacete de alpinista</strong>. Permite maior <strong>agilidade</strong> e <strong>visão angular</strong> em locais com espaço reduzido.</p>
+                                    <div class="tipo-imagem">
+                                        <img src="images/capa-sem-aba.jpg" alt="Capacete Sem Aba">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CLASSES DE PROTEÇÃO -->
+                        <div class="section-block">
+                            <h3 class="section-title"><i class='bx bx-shield-alt-2'></i> Classes de Proteção</h3>
+                            <div class="classes-container">
+                                <!-- CLASSE A -->
+                                <div class="classe-col">
+                                    <h4 class="classe-titulo">Classe <strong>A</strong></h4>
+                                    <p class="classe-sub">É o capacete para <strong>uso geral</strong>, indicado para proteção contra <strong>impactos</strong>. Usado principalmente em:</strong>.</p>
+
+                                    <ul class="classe-lista">
+                                        <li><i class='bx bx-check'></i> Construção civil</li>
+                                        <li><i class='bx bx-check'></i> Mineração</li>
+                                        <li><i class='bx bx-check'></i> Exploração madeireira</li>
+                                        <li><i class='bx bx-check'></i> Manufatura</li>
+                                    </ul>
+
+                                    <div class="classe-aviso">
+                                        <i class='bx bxs-error'></i>
+                                        <div>
+                                            <strong>Limitação:</strong> Não protege contra choques elétricos.<br>
+                                            <span class="destaque-vermelho">Não usar em trabalhos com energia elétrica.</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- CLASSE B -->
+                                <div class="classe-col">
+                                    <h4 class="classe-titulo">Classe <strong>B</strong></h4>
+                                    <p class="classe-sub">Possui <strong>composição reforçada</strong> para oferecer <strong>resistência elétrica</strong> e proteção contra <strong>choques de alta tensão</strong>.</p>
+
+                                    <p class="classe-ideal">Ideal para profissionais em:</p>
+                                    <ul class="classe-lista">
+                                        <li><i class='bx bx-check'></i> Circuitos elétricos</li>
+                                        <li><i class='bx bx-check'></i> Redes energizadas</li>
+                                        <li><i class='bx bx-check'></i> Manutenção elétrica</li>
+                                    </ul>
+
+                                    <div class="classe-destaque">
+                                        <i class='bx bxs-zap'></i>
+                                        <div>
+                                            Protege contra <strong>queda de objetos</strong> e <strong>choques até 2.200 volts</strong>.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="section-block">
+                            <h3 class="section-title"><i class='bx bx-palette'></i> Cores de Identificação</h3>
+                            <p class="text-center mb-4">As cores ajudam a identificar a <strong>função</strong> no canteiro de obras. Padrão mais comum:</p>
+                            <div class="cores-grid">
+                                <div class="cor-item" style="background: #f8f9fa; border-left: 6px solid #ddd;">
+                                    <strong>Branco/Cinza</strong> → Engenheiros, técnicos, mestres, encarregados, estagiários
+                                </div>
+                                <div class="cor-item" style="background: #e8f5e9; border-left: 6px solid #4caf50;">
+                                    <strong>Verde</strong> → Serventes, armadores, operários
+                                </div>
+                                <div class="cor-item" style="background: #e3f2fd; border-left: 6px solid #2196f3;">
+                                    <strong>Azul</strong> → Pedreiros
+                                </div>
+                                <div class="cor-item" style="background: #ffebee; border-left: 6px solid #f44336;">
+                                    <strong>Vermelho</strong> → Bombeiros, carpinteiros
+                                </div>
+                                <div class="cor-item" style="background: #fff3e0; border-left: 6px solid #ff9800;">
+                                    <strong>Laranja</strong> → Eletricistas
+                                </div>
+                                <div class="cor-item" style="background: #f3e5f5; border-left: 6px solid #9c27b0;">
+                                    <strong>Marrom</strong> → Carpinteiros, visitantes
+                                </div>
+                                <div class="cor-item" style="background: #fffde7; border-left: 6px solid #ffeb3b;">
+                                    <strong>Amarelo</strong> → Visitantes
+                                </div>
+                                <div class="cor-item" style="background: #eceff1; border-left: 6px solid #607d8b;">
+                                    <strong>Preto</strong> → Operadores de máquinas, técnicos em segurança
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SLIDE 3: MANUTENÇÃO -->
+                <div class="carousel-item">
+                    <div class="slide-full">
+                        <h2><strong>Manutenção</strong> Diária</h2>
+                        <div class="checklist">
+                            <div class="check-item"><i class='bx bx-check-circle'></i>
+                                <p>Limpe com <strong>água e sabão neutro</strong> (nunca solventes)</p>
+                            </div>
+                            <div class="check-item"><i class='bx bx-check-circle'></i>
+                                <p>Inspecione por <strong>rachaduras</strong> e <strong>deformações</strong></p>
+                            </div>
+                            <div class="check-item"><i class='bx bx-check-circle'></i>
+                                <p>Troque a <strong>suspensão a cada 12 meses</strong></p>
+                            </div>
+                            <div class="check-item"><i class='bx bx-check-circle'></i>
+                                <p>Armazene em local <strong>fresco e seco</strong></p>
+                            </div>
+                            <div class="check-item"><i class='bx bx-check-circle'></i>
+                                <p><strong>Nunca pinte</strong> ou use adesivos não aprovados</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SLIDE 4: QUANDO SUBSTITUIR -->
+                <div class="carousel-item">
+                    <div class="slide-full">
+                        <h2>Quando <strong>Substituir</strong>?</h2>
+                        <div class="alertas-grid">
+                            <div class="alerta danger"><i class='bx bx-error'></i>
+                                <p><strong>Após impacto forte</strong> (mesmo sem dano visível)</p>
+                            </div>
+                            <div class="alerta danger"><i class='bx bx-error'></i>
+                                <p><strong>Rachaduras</strong> ou <strong>deformações</strong></p>
+                            </div>
+                            <div class="alerta warning"><i class='bx bx-time'></i>
+                                <p><strong>Acima de 5 anos</strong> da data de fabricação</p>
+                            </div>
+                            <div class="alerta warning"><i class='bx bx-sun'></i>
+                                <p>Exposição a <strong>UV, calor ou químicos</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SLIDE 5: CONCLUSÃO -->
+                <div class="carousel-item">
+                    <div class="slide-conclusao">
+                        <div class="conclusao-container">
+                            <h2><i class='bx bx-check-double'></i> Conclusão</h2>
+                            <div class="conclusao-card">
+                                <p class="conclusao-texto">
+                                    O <strong>capacete de segurança</strong> é um EPI indispensável. Escolher o <strong>tipo, classe e cor corretos</strong>, fazer <strong>manutenção regular</strong> e <strong>substituir quando necessário</strong> pode
+                                    salvar vidas.
+                                </p>
+                                <div class="conclusao-destaques">
+                                    <div class="destaque-item"><i class='bx bx-hard-hat'></i>
+                                        <p><strong>Tipos:</strong> Aba total, central ou sem aba</p>
+                                    </div>
+                                    <div class="destaque-item"><i class='bx bx-shield-alt-2'></i>
+                                        <p><strong>Classes:</strong> A | B</p>
+                                    </div>
+                                    <div class="destaque-item"><i class='bx bx-wrench'></i>
+                                        <p><strong>Manutenção:</strong> Limpeza e inspeção</p>
+                                    </div>
+                                </div>
+                                <div class="conclusao-aviso">
+                                    <i class='bx bxs-error'></i>
+                                    <p><strong>Nunca use capacete danificado.</strong><br>Substitua <strong>imediatamente após impacto</strong>.</p>
+                                </div>
+                                <div class="conclusao-acao">
+                                    <a href="quiz-capacete.html" class="btn-conclusao">
+                                        <i class='bx bx-trophy'></i> Fazer o Quiz e Ganhar Certificado
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CONTROLES -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#aulaCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#aulaCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+
+            <!-- INDICADORES (5 SLIDES) -->
+            <div class="aula-indicators">
+                <div class="indicator active" data-bs-target="#aulaCarousel" data-bs-slide-to="0"></div>
+                <div class="indicator" data-bs-target="#aulaCarousel" data-bs-slide-to="1"></div>
+                <div class="indicator" data-bs-target="#aulaCarousel" data-bs-slide-to="2"></div>
+                <div class="indicator" data-bs-target="#aulaCarousel" data-bs-slide-to="3"></div>
+                <div class="indicator" data-bs-target="#aulaCarousel" data-bs-slide-to="4"></div>
+            </div>
+        </div>
+
+        <!-- AÇÕES -->
+        <div class="aula-actions">
+            <a href="quiz-capacete.html" class="btn-primary">Fazer Quiz</a>
+            <a href="aulas.html" class="btn-secondary"><i class='bx bx-left-arrow-alt'></i> Voltar</a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>EPI Easy</h4><a href="#sobre">Sobre Nós</a><a href="#newsletter">Inscreva-se</a>
+            </div>
+            <div class="footer-section">
+                <h4>Aulas</h4><a href="#epi-basico">EPI Básico</a><a href="#">Uso Correto</a><a href="#">Manutenção</a>
+            </div>
+            <div class="footer-section">
+                <h4>Recursos</h4><a href="#">Blog</a><a href="#">Tutoriais</a><a href="#">Downloads</a>
+            </div>
+            <div class="footer-section">
+                <h4>Ajuda</h4><a href="#suporte">Suporte</a><a href="#faq">FAQ</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 - EPI Easy | Feito com dedicação para aprimorar seu conhecimento em Segurança no Trabalho</p>
+            <div class="social-icons">
+                <a href="#">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+                <a href="#">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+                <a href="#">
+                    <ion-icon name="logo-youtube"></ion-icon>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/modo_escuro.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/aula-capacete.js"></script>
+
+    <script>
+        // JS para indicadores e scroll sticky
+        window.addEventListener('scroll', () => {
+            document.querySelector('header').classList.toggle('sticky', window.scrollY > 0);
+        });
+
+        // Ativa indicadores ao mudar de slide
+        const carousel = document.getElementById('aulaCarousel');
+        carousel.addEventListener('slid.bs.carousel', function() {
+            const indicators = document.querySelectorAll('.aula-indicators .indicator');
+            const activeIndex = Array.from(carousel.querySelectorAll('.carousel-item')).findIndex(item => item.classList.contains('active'));
+            indicators.forEach((ind, i) => {
+                ind.classList.toggle('active', i === activeIndex);
+            });
+        });
+    </script>
+</body>
+
+</html>

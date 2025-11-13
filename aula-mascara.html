@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula: Máscaras de Proteção - EPI Easy</title>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="https://via.placeholder.com/32x32/2fcdff/ffffff?text=E" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS do site -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/modo_escuro.css">
+    <link rel="stylesheet" href="css/escuro_index.css">
+
+    <!-- CSS da aula -->
+    <link rel="stylesheet" href="css/aula-mascara.css">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container">
+            <div class="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+            <a href="index.html" class="logo">
+                <h1>EPI Easy!</h1>
+            </a>
+            <nav class="menu" id="menu">
+                <a href="index.html#home">Home</a>
+                <a href="aulas.html">Aulas</a>
+                <a href="sobre.html">Sobre</a>
+            </nav>
+
+        </div>
+    </header>
+
+    <!-- AULA -->
+    <section class="aula-section">
+        <div class="aula-title">
+            <h1>Aula-5: Máscaras de Proteção Respiratória</h1>
+            <p class="subtitle">Proteja seus pulmões o filtro entre você e os riscos invisíveis do ar.</p>
+        </div>
+
+        <!-- CARROSSEL -->
+        <div id="aulaCarousel" class="carousel slide" data-bs-ride="false" data-bs-touch="true">
+            <div class="carousel-inner">
+
+                <!-- SLIDE 1: INTRODUÇÃO -->
+                <div class="carousel-item active">
+                    <div class="slide-intro">
+                        <div class="intro-text">
+                            <h2>Introdução às <strong>Máscaras Respiratórias</strong></h2>
+                            <p>As <strong>máscaras de proteção respiratória</strong> são EPIs essenciais para proteger contra <strong>poeiras, névoas, fumos, gases, vapores e agentes biológicos</strong>.</p>
+                            <p>Segundo a <strong>NR-6</strong> e o <strong>Programa de Proteção Respiratória (PPR)</strong>, o uso incorreto ou a escolha inadequada pode levar a <strong>doenças pulmonares graves</strong>, como <strong>silicose, asbestose ou intoxicação química</strong>.</p>
+                            <p>Nesta aula, você aprenderá os <strong>tipos (descartáveis, semifacial, facial inteira)</strong>, <strong>classificação PFF</strong>, <strong>teste de vedação</strong>, <strong>manutenção</strong> e <strong>limites de uso</strong>.
+                                Respire com segurança!</p>
+                        </div>
+                        <div class="intro-image">
+                            <img src="images/transferir.jpg" alt="Máscaras de Proteção Respiratória">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SLIDE 2: TIPOS DE MÁSCARAS -->
+                <div class="carousel-item">
+                    <div class="slide-full">
+                        <h2>Tipos de <strong>Máscaras</strong> por Função</h2>
+
+                        <div class="section-block">
+                            <h3 class="section-title"><i class='bx bx-shield'></i> Classificação e Aplicações</h3>
+                            <div class="tipos-grid">
+                                <div class="tipo-card">
+                                    <div class="tipo-icon">1</div>
+                                    <h4><strong>PFF1</strong> (Descartável)</h4>
+                                    <p>Contra <strong>poeiras e névoas não tóxicas</strong>. Ex: madeira, algodão.</p>
+                                    <div class="tipo-imagem">
+                                        <img src="images/mascaras/mascara-pff1.jpg" alt="Máscara PFF1">
+                                    </div>
+                                </div>
+                                <div class="tipo-card">
+                                    <div class="tipo-icon">2</div>
+                                    <h4><strong>PFF2 / N95</strong></h4>
+                                    <p>Filtra <strong>95%</strong> de partículas. Ideal para <strong>aerossóis, vírus, fungos</strong>.</p>
+                                    <div class="tipo-imagem">
+                                        <img src="images/mascaras/mascara pff2l.jpg" alt="Máscara PFF2">
+                                    </div>
+                                </div>
+
+                                <div class="tipo-card">
+                                    <div class="tipo-icon">4</div>
+                                    <h4><strong>Semifacial com Filtro</strong></h4>
+                                    <p>Contra <strong>gases, vapores orgânicos, ácidos</strong>. Filtros A, B, E, K.</p>
+                                    <div class="tipo-imagem">
+                                        <img src="images/mascaras/mascara-semi-facial.jpg" alt="Máscara Semifacial">
+                                    </div>
+                                </div>
+                                <div class="tipo-card">
+                                    <div class="tipo-icon">5</div>
+                                    <h4><strong>Facial Inteira</strong></h4>
+                                    <p>Protege <strong>rosto + olhos</strong>. Uso em <strong>tanques, resgate</strong>.</p>
+                                    <div class="tipo-imagem">
+                                        <img src="images/mascaras/facial inteira.jpg" alt="Máscara Facial Inteira">
+                                    </div>
+                                </div>
+                                <div class="tipo-card">
+                                    <div class="tipo-icon">6</div>
+                                    <h4><strong>Autônoma (AR)</strong></h4>
+                                    <p>Ar independente. Para <strong>espaços confinados, incêndio</strong>.</p>
+                                    <div class="tipo-imagem">
+                                        <img src="images/mascaras/mascara-autonoma-2.jpg" alt="Máscara Autônoma">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SLIDE 3: CLASSIFICAÇÃO PFF E FILTROS -->
+                <div class="carousel-item">
+                    <div class="slide-full">
+                        <h2>Classificação <strong>PFF</strong> e Filtros Químicos</h2>
+
+                        <div class="section-block">
+                            <h3 class="section-title"><i class='bx bx-bar-chart-alt-2'></i> PFF1 / PFF2 / PFF3</h3>
+                            <div class="pff-table">
+                                <div class="pff-item">
+                                    <div class="pff-nivel">PFF1</div>
+                                    <div class="pff-desc">Até <strong>4x LEO</strong><br>Poeiras mecânicas</div>
+                                </div>
+                                <div class="pff-item">
+                                    <div class="pff-nivel">PFF2</div>
+                                    <div class="pff-desc">Até <strong>10x LEO</strong><br>Aerossóis, vírus</div>
+                                </div>
+                                <div class="pff-item">
+                                    <div class="pff-nivel">PFF3</div>
+                                    <div class="pff-desc">Até <strong>50x LEO</strong><br>Sílica, amianto</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="section-block">
+                            <h3 class="section-title"><i class='bx bx-filter-alt'></i> Filtros Químicos (ABEK)</h3>
+                            <div class="filtros-grid">
+                                <div class="filtro">A <span>Vapores orgânicos</span></div>
+                                <div class="filtro">B <span>Gases inorgânicos</span></div>
+                                <div class="filtro">E <span>Gases ácidos</span></div>
+                                <div class="filtro">K <span>Amoníaco</span></div>
+                                <div class="filtro">P <span>Partículas (1,2,3)</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SLIDE 4: TESTE DE VEDAÇÃO -->
+                <div class="carousel-item">
+                    <div class="slide-full">
+                        <h2><strong>Teste de Vedação</strong> (Fit Test)</h2>
+                        <div class="passos-grid">
+                            <div class="passo">
+                                <i class='bx bx-user'></i>
+                                <h4>1. Coloque corretamente</h4>
+                                <p>Ajuste o clipe nasal e tiras.</p>
+                            </div>
+                            <div class="passo">
+                                <i class='bx bx-shield-quarter'></i>
+                                <h4>2. Teste Negativo</h4>
+                                <p>Cubra com as mãos e inspire. Não deve entrar ar.</p>
+                            </div>
+                            <div class="passo">
+                                <i class='bx bx-wind'></i>
+                                <h4>3. Teste Positivo</h4>
+                                <p>Expire forte. Não deve vazar pelos lados.</p>
+                            </div>
+                            <div class="passo">
+                                <i class='bx bx-refresh'></i>
+                                <h4>4. Repita a cada turno</h4>
+                                <p>Obligatório em PPR.</p>
+                            </div>
+                        </div>
+                        <div class="dica-uso">
+                            <i class='bx bxs-bulb'></i>
+                            <p><strong>Dica:</strong> Barba, óculos ou cicatrizes <strong>comprometem a vedação</strong>. Faça o <strong>Fit Test qualitativo ou quantitativo</strong>.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SLIDE 5: MANUTENÇÃO E ARMAZENAMENTO -->
+                <div class="carousel-item">
+                    <div class="slide-full">
+                        <h2><strong>Manutenção</strong> e Armazenamento</h2>
+
+                        <div class="section-block">
+                            <h3 class="section-title"><i class='bx bx-wrench'></i> Cuidados com a Máscara</h3>
+                            <div class="checklist">
+                                <div class="check-item"><i class='bx bx-check-circle'></i>
+                                    <p>Inspecione <strong>tiras, válvulas, filtros</strong> antes do uso</p>
+                                </div>
+                                <div class="check-item"><i class='bx bx-check-circle'></i>
+                                    <p>Limpe <strong>com álcool 70% ou sabão neutro</strong></p>
+                                </div>
+                                <div class="check-item"><i class='bx bx-check-circle'></i>
+                                    <p>Guarde em <strong>saco plástico limpo</strong>, longe do sol</p>
+                                </div>
+                                <div class="check-item"><i class='bx bx-check-circle'></i>
+                                    <p>Troque filtro conforme <strong>odor, resistência ou prazo</strong></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="section-block">
+                            <h3 class="section-title"><i class='bx bx-time'></i> Quando Descartar</h3>
+                            <div class="alertas-grid">
+                                <div class="alerta danger"><i class='bx bx-error'></i>
+                                    <p><strong>Válvula danificada</strong> ou rasgo</p>
+                                </div>
+                                <div class="alerta danger"><i class='bx bx-error'></i>
+                                    <p><strong>Odor ou gosto</strong> dentro da máscara</p>
+                                </div>
+                                <div class="alerta warning"><i class='bx bx-water'></i>
+                                    <p><strong>Umidade ou mofo</strong></p>
+                                </div>
+                                <div class="alerta warning"><i class='bx bx-calendar-x'></i>
+                                    <p><strong>Filtro vencido</strong> (ver data)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SLIDE 6: CONCLUSÃO -->
+                <div class="carousel-item">
+                    <div class="slide-conclusao">
+                        <div class="conclusao-container">
+                            <h2><i class='bx bx-check-double'></i> Conclusão</h2>
+                            <div class="conclusao-card">
+                                <p class="conclusao-texto">
+                                    A <strong>máscara respiratória</strong> é o <strong>último filtro antes dos seus pulmões</strong>. Escolha pelo <strong>risco (PFF1, PFF2)</strong>, faça o <strong>teste de vedação</strong>, mantenha <strong>limpa e bem armazenada</strong>.
+                                    Um EPI mal usado não protege<strong>ele engana</strong>.
+                                </p>
+                                <div class="conclusao-destaques">
+                                    <div class="destaque-item"><i class='bx bx-shield'></i>
+                                        <p><strong>Tipos:</strong> PFF, Semifacial, Autônoma</p>
+                                    </div>
+                                    <div class="destaque-item"><i class='bx bx-bar-chart-alt-2'></i>
+                                        <p><strong>PFF:</strong> 4x, 10x, 50x LEO</p>
+                                    </div>
+                                    <div class="destaque-item"><i class='bx bx-wrench'></i>
+                                        <p><strong>Cuidados:</strong> Vedação, limpeza, troca</p>
+                                    </div>
+                                </div>
+                                <div class="conclusao-aviso">
+                                    <i class='bx bxs-error'></i>
+                                    <p><strong>Nunca ignore o teste de vedação.</strong><br>Ar sujo entra em <strong>segundos</strong>. Doença pulmonar leva <strong>anos</strong>.</p>
+                                </div>
+                                <div class="conclusao-acao">
+                                    <a href="quiz-mascara.html" class="btn-conclusao">
+                                        <i class='bx bx-trophy'></i> Fazer o Quiz e Ganhar Certificado
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CONTROLES -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#aulaCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#aulaCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+
+            <!-- INDICADORES -->
+            <div class="aula-indicators">
+                <div class="indicator active" data-bs-target="#aulaCarousel" data-bs-slide-to="0"></div>
+                <div class="indicator" data-bs-target="#aulaCarousel" data-bs-slide-to="1"></div>
+                <div class="indicator" data-bs-target="#aulaCarousel" data-bs-slide-to="2"></div>
+                <div class="indicator" data-bs-target="#aulaCarousel" data-bs-slide-to="3"></div>
+                <div class="indicator" data-bs-target="#aulaCarousel" data-bs-slide-to="4"></div>
+                <div class="indicator" data-bs-target="#aulaCarousel" data-bs-slide-to="5"></div>
+            </div>
+        </div>
+
+        <!-- AÇÕES -->
+        <div class="aula-actions">
+            <a href="quiz-mascara.html" class="btn-primary">Fazer Quiz</a>
+            <a href="aulas.html" class="btn-secondary"><i class='bx bx-left-arrow-alt'></i> Voltar</a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>EPI Easy</h4><a href="#sobre">Sobre Nós</a><a href="#newsletter">Inscreva-se</a>
+            </div>
+            <div class="footer-section">
+                <h4>Aulas</h4><a href="#epi-basico">EPI Básico</a><a href="#">Uso Correto</a><a href="#">Manutenção</a>
+            </div>
+            <div class="footer-section">
+                <h4>Recursos</h4><a href="#">Blog</a><a href="#">Tutoriais</a><a href="#">Downloads</a>
+            </div>
+            <div class="footer-section">
+                <h4>Ajuda</h4><a href="#suporte">Suporte</a><a href="#faq">FAQ</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 - EPI Easy | Feito com dedicação para aprimorar seu conhecimento em Segurança no Trabalho</p>
+            <div class="social-icons">
+                <a href="#">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+                <a href="#">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+                <a href="#">
+                    <ion-icon name="logo-youtube"></ion-icon>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/modo_escuro.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/aula-mascara.js"></script>
+
+    <script>
+        // Sticky header
+        window.addEventListener('scroll', () => {
+            document.querySelector('header').classList.toggle('sticky', window.scrollY > 0);
+        });
+
+        // Atualiza indicadores
+        const carousel = document.getElementById('aulaCarousel');
+        carousel.addEventListener('slid.bs.carousel', function() {
+            const indicators = document.querySelectorAll('.aula-indicators .indicator');
+            const activeIndex = Array.from(carousel.querySelectorAll('.carousel-item')).findIndex(item => item.classList.contains('active'));
+            indicators.forEach((ind, i) => {
+                ind.classList.toggle('active', i === activeIndex);
+            });
+        });
+    </script>
+</body>
+
+</html>
