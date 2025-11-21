@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-MZ">
 
 <head>
     <meta charset="UTF-8">
@@ -11,7 +11,7 @@
     <link rel="icon" href="https://via.placeholder.com/32x32/2fcdff/ffffff?text=E" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
-    <!-- Bootstrap 5 -->
+    <!-- Bootstrap 5 (apenas para grid e utilitários) -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- CSS do site -->
@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="css/modo_escuro.css">
     <link rel="stylesheet" href="css/escuro_index.css">
 
-    <!-- CSS da aula -->
+    <!-- CSS da aula (versão estática com seção de riscos) -->
     <link rel="stylesheet" href="css/aula-oculos.css">
 </head>
 
@@ -37,210 +37,225 @@
                 <a href="aulas.html">Aulas</a>
                 <a href="sobre.html">Sobre</a>
             </nav>
-
         </div>
     </header>
 
-    <!-- AULA -->
+    <!-- AULA (sem carrossel - seções sequenciais) -->
     <section class="aula-section">
+        <!-- TÍTULO DA AULA -->
         <div class="aula-title">
             <h1>Aula-2: Óculos de Proteção</h1>
             <p class="subtitle">Proteja seus olhos com o EPI certo</p>
         </div>
 
-        <!-- CARROSSEL -->
-        <div id="aulaCarousel" class="carousel slide" data-bs-ride="false" data-bs-touch="true">
-            <div class="carousel-inner">
+        <!-- SEÇÃO 1: INTRODUÇÃO -->
+        <div class="aula-block slide-intro">
+            <div class="intro-text">
+                <h2>Introdução aos <strong>Óculos de Proteção</strong></h2>
+                <p>Os <strong>óculos de proteção</strong> são um <strong>EPI essencial</strong> para proteger os olhos contra <strong>partículas, poeira, respingos químicos, radiação UV e impactos</strong> em obras, laboratórios e indústrias.</p>
+                <p>De acordo com a <strong>Lei n.º 23/2007 (Lei do Trabalho)</strong> e o <strong>Decreto n.º 56/2017 (SST)</strong> em Moçambique, todo trabalhador exposto a riscos oculares deve usar <strong>óculos certificados</strong> com <strong>CA válido</strong>.</p>
+                <p>Nesta aula, você vai aprender os <strong>principais riscos</strong>, <strong>tipos de lentes</strong>, <strong>modelos por risco</strong>, <strong>ajuste correto</strong> e <strong>manutenção</strong> para garantir proteção total.</p>
+            </div>
+            <div class="intro-image">
+                <img src="images/Óculos De Proteção Incolor Protetor Segurança EPI….jpg" alt="Óculos de Proteção">
+            </div>
+        </div>
 
-                <!-- SLIDE 1: INTRODUÇÃO -->
-                <div class="carousel-item active">
-                    <div class="slide-intro">
-                        <div class="intro-text">
-                            <h2>Introdução aos <strong>Óculos de Proteção</strong></h2>
-                            <p>Os <strong>óculos de proteção</strong> são um <strong>EPI essencial</strong> para proteger os olhos contra <strong>partículas, poeira, respingos químicos, radiação UV e impactos</strong> em obras, laboratórios e indústrias.</p>
-                            <p>De acordo com a <strong>NR-6</strong>, todo trabalhador exposto a riscos oculares deve usar <strong>óculos certificados</strong> com <strong>CA válido</strong>.</p>
-                            <p>Nesta aula, você vai aprender os <strong>tipos de lentes</strong>, <strong>modelos por risco</strong>, <strong>ajuste correto</strong> e <strong>manutenção</strong> para garantir proteção total.</p>
-                        </div>
-                        <div class="intro-image">
-                            <img src="images/Óculos De Proteção Incolor Protetor Segurança EPI….jpg" alt="Óculos de Proteção">
+        <!-- SEÇÃO 2: RISCOS (NOVA SEÇÃO ADICIONADA) -->
+
+        <!-- SEÇÃO 3: TIPOS DE ÓCULOS -->
+        <div class="aula-block slide-full">
+            <h2>Tipos de <strong>Óculos de Proteção</strong> por Risco</h2>
+
+            <div class="oculos-grid-foto">
+
+                <!-- 1. RADIAÇÃO UV/IR -->
+                <div class="oculos-card-foto uv-ir">
+                    <div class="foto">
+                        <img src="images/oculos_infravermelhojpg.jpg" alt="Óculos para solda UV/IR">
+                    </div>
+                    <div class="info">
+                        <div class="icon"><i class='bx bxs-sun'></i></div>
+                        <h4>Radiação UV/IR</h4>
+                        <p>Lentes que <strong>bloqueiam luz excessiva</strong> de <strong>solda e maçarico</strong></p>
+                        <div class="setores">
+                            <span class="setor">Metalurgia</span>
+                            <span class="setor">Siderurgia</span>
+                            <span class="setor">Construção Naval</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- SLIDE 2: TIPOS DE ÓCULOS (ESTILO CAPACETE + FOTOS) -->
-                <div class="carousel-item">
-                    <div class="slide-full">
-                        <h2>Tipos de <strong>Óculos de Proteção</strong> por Risco</h2>
-
-                        <div class="oculos-grid-foto">
-
-                            <!-- 1. RADIAÇÃO UV/IR -->
-                            <div class="oculos-card-foto uv-ir">
-                                <div class="foto">
-                                    <img src="images/oculos_infravermelhojpg.jpg" alt="Óculos para solda UV/IR">
-                                </div>
-                                <div class="info">
-                                    <div class="icon"><i class='bx bxs-sun'></i></div>
-                                    <h4>Radiação UV/IR</h4>
-                                    <p>Lentes que <strong>bloqueiam luz excessiva</strong> de <strong>solda e maçarico</strong></p>
-                                    <div class="setores">
-                                        <span class="setor">Metalurgia</span>
-                                        <span class="setor">Siderurgia</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- 2. IMPACTOS -->
-                            <div class="oculos-card-foto impacto">
-                                <div class="foto">
-                                    <img src="images/oculos-contra-impactos.png" alt="Óculos contra impactos">
-                                </div>
-                                <div class="info">
-                                    <div class="icon"><i class='bx bx-shield'></i></div>
-                                    <h4>Contra Impactos</h4>
-                                    <p>Protege contra <strong>poeira, cimento e resíduos</strong></p>
-                                    <div class="setores">
-                                        <span class="setor">Construção</span>
-                                        <span class="setor">Marcenaria</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- 3. BIOLÓGICO -->
-                            <div class="oculos-card-foto biologico">
-                                <div class="foto">
-                                    <img src="images/culos-riscos-biolo.jpg" alt="Óculos para risco biológico">
-                                </div>
-                                <div class="info">
-                                    <div class="icon"><i class='bx bxs-virus'></i></div>
-                                    <h4>Risco Biológico</h4>
-                                    <p>Design <strong>vedado</strong> contra <strong>vírus e bactérias</strong></p>
-                                    <div class="setores">
-                                        <span class="setor">Hospitais</span>
-                                        <span class="setor">Laboratórios</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- 4. QUÍMICO -->
-                            <div class="oculos-card-foto quimico">
-                                <div class="foto">
-                                    <img src="images/oculos-quimicos.jpg" alt="Óculos para risco químico">
-                                </div>
-                                <div class="info">
-                                    <div class="icon"><i class='bx bxs-flask'></i></div>
-                                    <h4>Risco Químico</h4>
-                                    <p>Lentes <strong>antiembaçantes</strong> e <strong>resistentes a ácidos</strong></p>
-                                    <div class="setores">
-                                        <span class="setor">Química</span>
-                                        <span class="setor">Farmacêutica</span>
-                                    </div>
-                                </div>
-                            </div>
-
+                <!-- 2. IMPACTOS -->
+                <div class="oculos-card-foto impacto">
+                    <div class="foto">
+                        <img src="images/oculos-contra-impactos.png" alt="Óculos contra impactos">
+                    </div>
+                    <div class="info">
+                        <div class="icon"><i class='bx bx-shield'></i></div>
+                        <h4>Contra Impactos</h4>
+                        <p>Protege contra <strong>poeira, cimento e resíduos</strong></p>
+                        <div class="setores">
+                            <span class="setor">Construção</span>
+                            <span class="setor">Marcenaria</span>
+                            <span class="setor">Mineração</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- SLIDE 3: AJUSTE E USO CORRETO -->
-                <div class="carousel-item">
-                    <div class="slide-full">
-                        <h2><strong>Ajuste</strong> Correto</h2>
-                        <div class="checklist">
-                            <div class="check-item"><i class='bx bx-check-circle'></i>
-                                <p>Apoie no <strong>nariz</strong> sem apertar</p>
-                            </div>
-                            <div class="check-item"><i class='bx bx-check-circle'></i>
-                                <p>Haste deve <strong>contornar a orelha</strong> sem folga</p>
-                            </div>
-                            <div class="check-item"><i class='bx bx-check-circle'></i>
-                                <p>Lente deve cobrir <strong>toda a área ocular</strong></p>
-                            </div>
-                            <div class="check-item"><i class='bx bx-check-circle'></i>
-                                <p>Não use sobre <strong>óculos de grau</strong> (use sobre-óculos)</p>
-                            </div>
+
+                <!-- 3. BIOLÓGICO -->
+                <div class="oculos-card-foto biologico">
+                    <div class="foto">
+                        <img src="images/culos-riscos-biolo.jpg" alt="Óculos para risco biológico">
+                    </div>
+                    <div class="info">
+                        <div class="icon"><i class='bx bxs-virus'></i></div>
+                        <h4>Risco Biológico</h4>
+                        <p>Design <strong>vedado</strong> contra <strong>vírus e bactérias</strong></p>
+                        <div class="setores">
+                            <span class="setor">Hospitais</span>
+                            <span class="setor">Laboratórios</span>
+                            <span class="setor">Clínicas</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- SLIDE 4: MANUTENÇÃO E SUBSTITUIÇÃO -->
-                <div class="carousel-item">
-                    <div class="slide-full">
-                        <h2>Manutenção e <strong>Substituição</strong></h2>
-                        <div class="alertas-grid">
-                            <div class="alerta success"><i class='bx bx-wrench'></i>
-                                <p>Limpe com <strong>água e sabão neutro</strong></p>
-                            </div>
-                            <div class="alerta danger"><i class='bx bx-error'></i>
-                                <p><strong>Riscos profundos</strong> na lente</p>
-                            </div>
-                            <div class="alerta danger"><i class='bx bx-error'></i>
-                                <p><strong>Armação quebrada</strong></p>
-                            </div>
-                            <div class="alerta warning"><i class='bx bx-time'></i>
-                                <p><strong>Acima de 2 anos</strong> de uso intenso</p>
-                            </div>
+                <!-- 4. QUÍMICO -->
+                <div class="oculos-card-foto quimico">
+                    <div class="foto">
+                        <img src="images/oculos-quimicos.jpg" alt="Óculos para risco químico">
+                    </div>
+                    <div class="info">
+                        <div class="icon"><i class='bx bxs-flask'></i></div>
+                        <h4>Risco Químico</h4>
+                        <p>Lentes <strong>antiembaçantes</strong> e <strong>resistentes a ácidos</strong></p>
+                        <div class="setores">
+                            <span class="setor">Química</span>
+                            <span class="setor">Farmacêutica</span>
+                            <span class="setor">Agricultura</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- SLIDE 5: CONCLUSÃO -->
-                <div class="carousel-item">
-                    <div class="slide-conclusao">
-                        <div class="conclusao-container">
-                            <h2><i class='bx bx-check-double'></i> Conclusão</h2>
-                            <div class="conclusao-card">
-                                <p class="conclusao-texto">
-                                    Os <strong>óculos de proteção</strong> são indispensáveis. Escolha o <strong>tipo certo por risco</strong>, faça <strong>ajuste perfeito</strong> e <strong>substitua quando danificado</strong>.
-                                </p>
-                                <div class="conclusao-destaques">
-                                    <div class="destaque-item"><i class='bx bx-shield-quarter'></i>
-                                        <p><strong>Tipos:</strong> UV/IR, Impacto, Biológico, Químico</p>
-                                    </div>
-                                    <div class="destaque-item"><i class='bx bx-wrench'></i>
-                                        <p><strong>Manutenção:</strong> Limpeza suave</p>
-                                    </div>
-                                    <div class="destaque-item"><i class='bx bx-error'></i>
-                                        <p><strong>Substituir:</strong> Risco ou quebra</p>
-                                    </div>
-                                </div>
-                                <div class="conclusao-aviso">
-                                    <i class='bx bxs-error'></i>
-                                    <p><strong>Nunca use óculos riscados.</strong><br>Um risco pode virar uma lesão grave.</p>
-                                </div>
-                                <div class="conclusao-acao">
-                                    <a href="quiz-oculos.html" class="btn-conclusao">
-                                        <i class='bx bx-trophy'></i> Fazer o Quiz e Ganhar Certificado
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
+            </div>
+        </div>
+        <div class="aula-block slide-full">
+            <h2>Principais <strong>Riscos</strong> Oculares no Trabalho</h2>
+            <div class="section-block">
+                <h3 class="section-title"><i class='bx bx-warning'></i> Identificação de Riscos Comuns em Moçambique</h3>
+                <div class="riscos-grid">
+                    <div class="risco-card">
+                        <div class="risco-icon"><i class='bx bx-down-arrow-alt'></i></div>
+                        <h4><strong>Partículas Projetadas</strong></h4>
+                        <p>Areia, cimento, lascas de madeira ou metal em construção (Maputo) e mineração (Tete).</p>
                     </div>
+                    <div class="risco-card">
+                        <div class="risco-icon"><i class='bx bxs-droplet'></i></div>
+                        <h4><strong>Respingos Químicos</strong></h4>
+                        <p>Ácidos, solventes ou fertilizantes em fábricas e agricultura (Nampula).</p>
+                    </div>
+                    <div class="risco-card">
+                        <div class="risco-icon"><i class='bx bxs-sun'></i></div>
+                        <h4><strong>Radiação UV/IR</strong></h4>
+                        <p>Solda elétrica, maçarico ou luz solar intensa em obras ao ar livre.</p>
+                    </div>
+                    <div class="risco-card">
+                        <div class="risco-icon"><i class='bx bx-radioactive'></i></div>
+                        <h4><strong>Poeira e Fumos</strong></h4>
+                        <p>Em fábricas de cimento, moagem de grãos ou minas de carvão.</p>
+                    </div>
+                    <div class="risco-card">
+                        <div class="risco-icon"><i class='bx bxs-virus'></i></div>
+                        <h4><strong>Riscos Biológicos</strong></h4>
+                        <p>Gotículas com vírus ou bactérias em hospitais e laboratórios.</p>
+                    </div>
+                    <div class="risco-card">
+                        <div class="risco-icon"><i class='bx bx-wind'></i></div>
+                        <h4><strong>Impactos Mecânicos</strong></h4>
+                        <p>Ferramentas, pregos ou detritos em marcenaria e metalurgia.</p>
+                    </div>
+                </div>
+                <div class="risco-dica">
+                    <i class='bx bxs-bulb'></i>
+                    <p><strong>Dica Local:</strong> Em Moçambique, ~15% dos acidentes laborais afetam os olhos (MITESS, 2023). Use sempre óculos adequados ao risco!</p>
                 </div>
             </div>
+        </div>
 
-            <!-- CONTROLES -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#aulaCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#aulaCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon"></span>
-            </button>
+        <!-- SEÇÃO 4: AJUSTE E USO CORRETO -->
+        <div class="aula-block slide-full">
+            <h2><strong>Ajuste</strong> Correto</h2>
+            <div class="checklist">
+                <div class="check-item"><i class='bx bx-check-circle'></i>
+                    <p>Apoie no <strong>nariz</strong> sem apertar</p>
+                </div>
+                <div class="check-item"><i class='bx bx-check-circle'></i>
+                    <p>Haste deve <strong>contornar a orelha</strong> sem folga</p>
+                </div>
+                <div class="check-item"><i class='bx bx-check-circle'></i>
+                    <p>Lente deve cobrir <strong>toda a área ocular</strong></p>
+                </div>
+                <div class="check-item"><i class='bx bx-check-circle'></i>
+                    <p>Não use sobre <strong>óculos de grau</strong> (use sobre-óculos)</p>
+                </div>
+            </div>
+        </div>
 
-            <!-- INDICADORES (5 SLIDES) -->
-            <div class="aula-indicators">
-                <div class="indicator active" data-bs-target="#aulaCarousel" data-bs-slide-to="0"></div>
-                <div class="indicator" data-bs-target="#aulaCarousel" data-bs-slide-to="1"></div>
-                <div class="indicator" data-bs-target="#aulaCarousel" data-bs-slide-to="2"></div>
-                <div class="indicator" data-bs-target="#aulaCarousel" data-bs-slide-to="3"></div>
-                <div class="indicator" data-bs-target="#aulaCarousel" data-bs-slide-to="4"></div>
+        <!-- SEÇÃO 5: MANUTENÇÃO E SUBSTITUIÇÃO -->
+        <div class="aula-block slide-full">
+            <h2>Manutenção e <strong>Substituição</strong></h2>
+            <div class="alertas-grid">
+                <div class="alerta success"><i class='bx bx-wrench'></i>
+                    <p>Limpe com <strong>água e sabão neutro</strong></p>
+                </div>
+                <div class="alerta danger"><i class='bx bx-error'></i>
+                    <p><strong>Riscos profundos</strong> na lente</p>
+                </div>
+                <div class="alerta danger"><i class='bx bx-error'></i>
+                    <p><strong>Armação quebrada</strong></p>
+                </div>
+                <div class="alerta warning"><i class='bx bx-time'></i>
+                    <p><strong>Acima de 2 anos</strong> de uso intenso</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- SEÇÃO 6: CONCLUSÃO -->
+        <div class="aula-block slide-conclusao">
+            <div class="conclusao-container">
+                <h2><i class='bx bx-check-double'></i> Conclusão</h2>
+                <div class="conclusao-card">
+                    <p class="conclusao-texto">
+                        Os <strong>óculos de proteção</strong> são indispensáveis. Identifique o <strong>risco</strong>, escolha o <strong>tipo certo</strong>, faça <strong>ajuste perfeito</strong> e <strong>substitua quando danificado</strong>.
+                    </p>
+                    <div class="conclusao-destaques">
+                        <div class="destaque-item"><i class='bx bx-warning'></i>
+                            <p><strong>Riscos:</strong> Partículas, químicos, UV, biológicos</p>
+                        </div>
+                        <div class="destaque-item"><i class='bx bx-shield-quarter'></i>
+                            <p><strong>Tipos:</strong> UV/IR, Impacto, Biológico, Químico</p>
+                        </div>
+                        <div class="destaque-item"><i class='bx bx-wrench'></i>
+                            <p><strong>Manutenção:</strong> Limpeza suave</p>
+                        </div>
+                    </div>
+                    <div class="conclusao-aviso">
+                        <i class='bx bxs-error'></i>
+                        <p><strong>Nunca use óculos riscados.</strong><br>Um risco pode virar uma lesão grave.</p>
+                    </div>
+                    <div class="conclusao-acao">
+                        <a href="quiz.html?aula=oculos" class="btn-conclusao">
+                            <i class='bx bx-trophy'></i> Jogar Quiz
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
 
         <!-- AÇÕES -->
-        <div class="aula-actions">
-            <a href="quiz-oculos.html" class="btn-primary">Fazer Quiz</a>
-            <a href="aulas.html" class="btn-secondary"><i class='bx bx-left-arrow-alt'></i> Voltar</a>
+        <div class="aula-actions text-center mt-5 mb-5">
+            <a href="aulas.html" class="btn btn-secondary"><i class='bx bx-left-arrow-alt'></i> Voltar às Aulas</a>
         </div>
     </section>
 
@@ -280,21 +295,10 @@
     <script src="js/modo_escuro.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/aula-oculos.js"></script>
 
     <script>
         window.addEventListener('scroll', () => {
             document.querySelector('header').classList.toggle('sticky', window.scrollY > 0);
-        });
-
-        const carousel = document.getElementById('aulaCarousel');
-        carousel.addEventListener('slid.bs.carousel', function() {
-            const indicators = document.querySelectorAll('.aula-indicators .indicator');
-            const activeIndex = Array.from(carousel.querySelectorAll('.carousel-item')).findIndex(item => item.classList.contains('active'));
-            indicators.forEach((ind, i) => {
-                ind.classList.toggle('active', i === activeIndex);
-            });
         });
     </script>
 </body>

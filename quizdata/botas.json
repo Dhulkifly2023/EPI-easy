@@ -1,0 +1,92 @@
+[
+    {
+        "question": "Segundo a aula, qual legislação em Moçambique exige que o empregador forneça calçado adequado?",
+        "answers": [
+            { "text": "Lei n.º 23/2007", "correct": true },
+            { "text": "Norma Regulamentadora 33", "correct": false },
+            { "text": "ISO 9001", "correct": false },
+            { "text": "Código da Estrada", "correct": false }
+        ]
+    },
+    {
+        "question": "De acordo com o MITESS, qual é a percentagem aproximada de lesões laborais relacionadas com os pés em Moçambique?",
+        "answers": [
+            { "text": "5%", "correct": false },
+            { "text": "15%", "correct": true },
+            { "text": "30%", "correct": false },
+            { "text": "50%", "correct": false }
+        ]
+    },
+    {
+        "question": "A biqueira de aço oferece proteção contra impactos de até quantos Joules?",
+        "answers": [
+            { "text": "100 J", "correct": false },
+            { "text": "150 J", "correct": false },
+            { "text": "200 J", "correct": true },
+            { "text": "500 J", "correct": false }
+        ]
+    },
+    {
+        "question": "Qual é a principal vantagem da biqueira de compósito para eletricistas?",
+        "answers": [
+            { "text": "É mais barata que a de aço", "correct": false },
+            { "text": "Não conduz eletricidade", "correct": true },
+            { "text": "É feita de borracha reciclada", "correct": false },
+            { "text": "Protege contra produtos químicos ácidos", "correct": false }
+        ]
+    },
+    {
+        "question": "O que significa a classificação SRC em um solado antiderrapante?",
+        "answers": [
+            { "text": "Resistente apenas a óleo", "correct": false },
+            { "text": "A soma das proteções SRA e SRB", "correct": true },
+            { "text": "Solado Resistente ao Calor", "correct": false },
+            { "text": "Indicado para pisos de madeira", "correct": false }
+        ]
+    },
+    {
+        "question": "Para proteção contra perfurações (pregos, vidros), que componente a bota deve ter?",
+        "answers": [
+            { "text": "Palmilha de kevlar ou aço", "correct": true },
+            { "text": "Biqueira de PVC", "correct": false },
+            { "text": "Cano longo impermeável", "correct": false },
+            { "text": "Solado liso", "correct": false }
+        ]
+    },
+    {
+        "question": "Qual produto químico NUNCA deve ser usado para limpar as botas de proteção?",
+        "answers": [
+            { "text": "Água", "correct": false },
+            { "text": "Sabão neutro", "correct": false },
+            { "text": "Impermeabilizante", "correct": false },
+            { "text": "Gasolina", "correct": true }
+        ]
+    },
+    {
+        "question": "As botas isolantes elétricas mencionadas na aula protegem até qual voltagem?",
+        "answers": [
+            { "text": "220 V", "correct": false },
+            { "text": "1.000 V", "correct": false },
+            { "text": "18.000 V", "correct": true },
+            { "text": "50.000 V", "correct": false }
+        ]
+    },
+    {
+        "question": "Qual é o sinal de alerta que indica que a bota deve ser descartada imediatamente devido ao desgaste do tempo?",
+        "answers": [
+            { "text": "Após 1 mês de uso leve", "correct": false },
+            { "text": "Se estiver suja de lama", "correct": false },
+            { "text": "Após 12 meses de uso intenso", "correct": true },
+            { "text": "Se o cadarço desamarrar", "correct": false }
+        ]
+    },
+    {
+        "question": "Qual é a folga recomendada no bico da bota para garantir o conforto e o tamanho correto?",
+        "answers": [
+            { "text": "Não deve haver folga", "correct": false },
+            { "text": "1 cm", "correct": true },
+            { "text": "3 cm", "correct": false },
+            { "text": "5 cm", "correct": false }
+        ]
+    }
+]

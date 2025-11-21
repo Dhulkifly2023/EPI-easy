@@ -1,0 +1,92 @@
+[
+    {
+        "question": "Qual é a função principal do capacete de segurança descrita na introdução?",
+        "answers": [
+            { "text": "Apenas proteger contra o sol", "correct": false },
+            { "text": "Absorver e distribuir a energia de impactos", "correct": true },
+            { "text": "Servir como identificação visual apenas", "correct": false },
+            { "text": "Proteger os ombros contra chuva", "correct": false }
+        ]
+    },
+    {
+        "question": "Qual tipo de capacete é conhecido como 'capacete de alpinista' e permite maior visão angular?",
+        "answers": [
+            { "text": "Aba Total", "correct": false },
+            { "text": "Aba Central", "correct": false },
+            { "text": "Sem Aba", "correct": true },
+            { "text": "Classe B", "correct": false }
+        ]
+    },
+    {
+        "question": "O capacete de 'Aba Total' é caracterizado por proteger quais áreas além da cabeça?",
+        "answers": [
+            { "text": "Apenas os olhos", "correct": false },
+            { "text": "Face, pescoço e ombros", "correct": true },
+            { "text": "Ouvidos e nariz", "correct": false },
+            { "text": "Mãos e braços", "correct": false }
+        ]
+    },
+    {
+        "question": "Qual é a principal limitação do capacete de Classe A?",
+        "answers": [
+            { "text": "Não protege contra impactos", "correct": false },
+            { "text": "Não protege contra choques elétricos", "correct": true },
+            { "text": "É muito pesado para uso geral", "correct": false },
+            { "text": "Só pode ser usado por visitantes", "correct": false }
+        ]
+    },
+    {
+        "question": "Segundo o texto, o capacete de Classe B oferece proteção contra choques elétricos de até:",
+        "answers": [
+            { "text": "220 volts", "correct": false },
+            { "text": "500 volts", "correct": false },
+            { "text": "2.200 volts", "correct": true },
+            { "text": "10.000 volts", "correct": false }
+        ]
+    },
+    {
+        "question": "No padrão de cores apresentado, qual cor de capacete identifica os Eletricistas?",
+        "answers": [
+            { "text": "Verde", "correct": false },
+            { "text": "Azul", "correct": false },
+            { "text": "Laranja", "correct": true },
+            { "text": "Marrom", "correct": false }
+        ]
+    },
+    {
+        "question": "Quem geralmente utiliza os capacetes de cor Branca ou Cinza?",
+        "answers": [
+            { "text": "Serventes e armadores", "correct": false },
+            { "text": "Engenheiros, mestres e encarregados", "correct": true },
+            { "text": "Bombeiros", "correct": false },
+            { "text": "Operadores de máquinas", "correct": false }
+        ]
+    },
+    {
+        "question": "Com que frequência se recomenda a troca da suspensão (parte interna) do capacete?",
+        "answers": [
+            { "text": "A cada 6 meses", "correct": false },
+            { "text": "A cada 12 meses", "correct": true },
+            { "text": "A cada 2 anos", "correct": false },
+            { "text": "Nunca precisa ser trocada", "correct": false }
+        ]
+    },
+    {
+        "question": "Qual é o procedimento correto de limpeza para o capacete de segurança?",
+        "answers": [
+            { "text": "Usar solventes químicos", "correct": false },
+            { "text": "Lavar com gasolina", "correct": false },
+            { "text": "Usar água e sabão neutro", "correct": true },
+            { "text": "Limpar apenas com pano seco", "correct": false }
+        ]
+    },
+    {
+        "question": "O que se deve fazer com um capacete após ele sofrer um impacto forte?",
+        "answers": [
+            { "text": "Continuar usando se não houver rachadura visível", "correct": false },
+            { "text": "Pintar o local do impacto", "correct": false },
+            { "text": "Substituir imediatamente", "correct": true },
+            { "text": "Trocar apenas a suspensão", "correct": false }
+        ]
+    }
+]

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-MZ">
 
 <head>
     <meta charset="UTF-8">
@@ -10,17 +10,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="icon" href="https://via.placeholder.com/32x32/2fcdff/ffffff?text=E" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
-    <!-- Bootstrap 5 -->
+    <!-- Bootstrap 5 (apenas para grid) -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
     <!-- CSS do site -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/modo_escuro.css">
     <link rel="stylesheet" href="css/escuro_index.css">
-
-    <!-- CSS da aula -->
+    <!-- CSS da aula (sem carrossel) -->
     <link rel="stylesheet" href="css/aula-botas.css">
 </head>
 
@@ -37,267 +34,269 @@
                 <a href="aulas.html">Aulas</a>
                 <a href="sobre.html">Sobre</a>
             </nav>
-
         </div>
     </header>
 
     <!-- AULA -->
     <section class="aula-section">
+        <!-- TÍTULO -->
         <div class="aula-title">
             <h1>Aula-6: Botas de Proteção</h1>
             <p class="subtitle">Seus pés carregam você o dia todo proteja-os com o calçado certo.</p>
         </div>
 
-        <!-- CARROSSEL -->
-        <div id="aulaCarousel" class="carousel slide" data-bs-ride="false" data-bs-touch="true">
-            <div class="carousel-inner">
+        <!-- INTRODUÇÃO -->
+        <div class="aula-block slide-intro">
+            <div class="intro-text">
+                <h2>Introdução às <strong>Botas de Segurança</strong></h2>
+                <p>As <strong>botas de proteção</strong> são o <strong>EPI mais importante para os membros inferiores</strong>, protegendo contra <strong>quedas de objetos, perfurações, choques elétricos, produtos químicos, umidade e torções</strong>.</p>
+                <p>Em Moçambique, a legislação laboral (Lei n.º 23/2007 e regulamentos de SST) exige que o empregador forneça calçado <strong>adequado e certificado</strong>. O uso errado ou botas danificadas causam <strong>fraturas, amputações e lesões por torção</strong>,
+                    comuns em mineração, construção e agricultura.</p>
+                <p>Nesta aula, você aprenderá os <strong>tipos por risco</strong>, <strong>biqueira de aço/compósito</strong>, <strong>solado antiderrapante</strong>, <strong>manutenção</strong> e <strong>sinais de descarte</strong>. Seus pés merecem firmeza!</p>
+            </div>
+            <div class="intro-image">
+                <img src="images/La bota 7110-B es la elección ideal para….jpg" alt="Botas de Proteção">
+            </div>
+        </div>
 
-                <!-- SLIDE 1: INTRODUÇÃO -->
-                <div class="carousel-item active">
-                    <div class="slide-intro">
-                        <div class="intro-text">
-                            <h2>Introdução às <strong>Botas de Segurança</strong></h2>
-                            <p>As <strong>botas de proteção</strong> são o <strong>EPI mais importante para os membros inferiores</strong>, protegendo contra <strong>quedas de objetos, perfurações, choques elétricos, produtos químicos, umidade e torções</strong>.</p>
-                            <p>Segundo a <strong>NR-6</strong>, o empregador deve fornecer calçado <strong>certificado pelo CA</strong>. O uso errado ou botas danificadas causam <strong>fraturas, amputações e lesões por torção</strong>.</p>
-                            <p>Nesta aula, você aprenderá os <strong>tipos por risco</strong>, <strong>biqueira de aço/compósito</strong>, <strong>solado antiderrapante</strong>, <strong>manutenção</strong> e <strong>sinais de descarte</strong>. Seus pés
-                                merecem firmeza!</p>
-                        </div>
-                        <div class="intro-image">
-                            <img src="images/La bota 7110-B es la elección ideal para….jpg" alt="Botas de Proteção">
-                        </div>
+        <!-- RISCOS -->
+        <div class="aula-block slide-full">
+            <h2>Principais <strong>Riscos</strong> para os Pés no Trabalho</h2>
+            <div class="section-block">
+                <h3 class="section-title"><i class='bx bx-warning'></i> Identificação de Riscos Comuns em Moçambique</h3>
+                <div class="riscos-grid">
+                    <div class="risco-card">
+                        <div class="risco-icon"><i class='bx bx-down-arrow-alt'></i></div>
+                        <h4><strong>Queda de Objetos</strong></h4>
+                        <p>Comum em minas, construção e portos (ex.: Tete, Maputo). Pode esmagar dedos.</p>
+                    </div>
+                    <div class="risco-card">
+                        <div class="risco-icon"><i class='bx bx-radioactive'></i></div>
+                        <h4><strong>Perfurações</strong></h4>
+                        <p>Pregos, arames e detritos em obras agrícolas ou industriais.</p>
+                    </div>
+                    <div class="risco-card">
+                        <div class="risco-icon"><i class='bx bx-zap'></i></div>
+                        <h4><strong>Choques Elétricos</strong></h4>
+                        <p>Em redes elétricas ou equipamentos úmidos (ex.: EDM).</p>
+                    </div>
+                    <div class="risco-card">
+                        <div class="risco-icon"><i class='bx bx-tint'></i></div>
+                        <h4><strong>Produtos Químicos</strong></h4>
+                        <p>Ácidos e óleos em fábricas de processamento.</p>
+                    </div>
+                    <div class="risco-card">
+                        <div class="risco-icon"><i class='bx bx-water'></i></div>
+                        <h4><strong>Umidade e Escorregões</strong></h4>
+                        <p>Pisos molhados em pescas, mercados ou chuvas sazonais.</p>
+                    </div>
+                    <div class="risco-card">
+                        <div class="risco-icon"><i class='bx bx-run'></i></div>
+                        <h4><strong>Torções</strong></h4>
+                        <p>Terrenos irregulares em agricultura ou logística rural.</p>
                     </div>
                 </div>
+                <div class="risco-dica">
+                    <i class='bx bxs-bulb'></i>
+                    <p><strong>Dica Local:</strong> Em Moçambique, acidentes com pés representam ~15% das lesões laborais (MITESS). Avalie o risco no seu posto!</p>
+                </div>
+            </div>
+        </div>
 
-                <!-- SLIDE 2: TIPOS DE BOTAS -->
-                <div class="carousel-item">
-                    <div class="slide-full">
-                        <h2>Tipos de <strong>Botas</strong> por Risco</h2>
-
-                        <div class="section-block">
-                            <h3 class="section-title"><i class='bx bx-shield'></i> Classificação e Aplicações</h3>
-                            <div class="tipos-grid">
-                                <div class="tipo-card">
-                                    <div class="tipo-icon">1</div>
-                                    <h4><strong>Biqueira de Aço</strong></h4>
-                                    <p>Protege contra <strong>200 J</strong> de impacto. Ideal para <strong>construção, metalurgia</strong>.</p>
-                                    <div class="tipo-imagem">
-                                        <img src="images/botas/bota-biqueira de açojpg.jpg" alt="Bota com Biqueira de Aço">
-                                    </div>
-                                </div>
-                                <div class="tipo-card">
-                                    <div class="tipo-icon">2</div>
-                                    <h4><strong>Biqueira Compósito</strong></h4>
-                                    <p>Mais leve, <strong>não conduz eletricidade</strong>. Para <strong>eletricistas, aeroportos</strong>.</p>
-                                    <div class="tipo-imagem">
-                                        <img src="images/botas/biqueira-composito.jpg" alt="Bota com Biqueira Compósito">
-                                    </div>
-                                </div>
-                                <div class="tipo-card">
-                                    <div class="tipo-icon">3</div>
-                                    <h4><strong>Antiperfuro</strong></h4>
-                                    <p>Palmlha de <strong>kevlar ou aço</strong>. Protege contra <strong>pregos, vidros</strong>.</p>
-                                    <div class="tipo-imagem">
-                                        <img src="images/botas/bota-antoperfuro.jpg" alt="Bota Antiperfuro">
-                                    </div>
-                                </div>
-                                <div class="tipo-card">
-                                    <div class="tipo-icon">4</div>
-                                    <h4><strong>Isolante Elétrico</strong></h4>
-                                    <p>Até <strong>18.000 V</strong>. Sola de borracha dielétrica.</p>
-                                    <div class="tipo-imagem">
-                                        <img src="images/botas/bota-de-seguranca-para-eletricista-03.jpg" alt="Bota Isolante Elétrica">
-                                    </div>
-                                </div>
-                                <div class="tipo-card">
-                                    <div class="tipo-icon">5</div>
-                                    <h4><strong>Químicas</strong></h4>
-                                    <p>Em <strong>PVC ou borracha nitrílica</strong>. Resiste a <strong>ácidos, óleos</strong>.</p>
-                                    <div class="tipo-imagem">
-                                        <img src="images/botas/bota-quimica.jpg" alt="Bota Química">
-                                    </div>
-                                </div>
-                                <div class="tipo-card">
-                                    <div class="tipo-icon">6</div>
-                                    <h4><strong>Antiderrapante</strong></h4>
-                                    <p>Sola <strong>SRA, SRB, SRC</strong>. Para <strong>pisos molhados, oleosos</strong>.</p>
-                                    <div class="tipo-imagem">
-                                        <img src="images/botas/bota-antidrrapnte.jpg" alt="Bota Antiderrapante">
-                                    </div>
-                                </div>
-                            </div>
+        <!-- TIPOS DE BOTAS -->
+        <div class="aula-block slide-full">
+            <h2>Tipos de <strong>Botas</strong> por Risco</h2>
+            <div class="section-block">
+                <h3 class="section-title"><i class='bx bx-shield'></i> Classificação e Aplicações</h3>
+                <div class="tipos-grid">
+                    <div class="tipo-card">
+                        <div class="tipo-icon">1</div>
+                        <h4><strong>Biqueira de Aço</strong></h4>
+                        <p>Protege contra <strong>200 J</strong> de impacto. Ideal para <strong>construção, metalurgia</strong>.</p>
+                        <div class="tipo-imagem">
+                            <img src="images/botas/bota-biqueira de açojpg.jpg" alt="Bota com Biqueira de Aço">
                         </div>
                     </div>
-                </div>
-
-                <!-- SLIDE 3: BIQUEIRA E SOLADO -->
-                <div class="carousel-item">
-                    <div class="slide-full">
-                        <h2>Biqueira e <strong>Solado</strong> — O Coração da Bota</h2>
-
-                        <div class="section-block">
-                            <h3 class="section-title"><i class='bx bx-shield-quarter'></i> Tipos de Biqueira</h3>
-                            <div class="biqueira-table">
-                                <div class="biqueira-item">
-                                    <div class="biqueira-tipo">Aço</div>
-                                    <div class="biqueira-desc">200 J<br>Mais barata, pesada</div>
-                                </div>
-                                <div class="biqueira-item">
-                                    <div class="biqueira-tipo">Compósito</div>
-                                    <div class="biqueira-desc">200 J<br>Leve, não condutora</div>
-                                </div>
-                                <div class="biqueira-item">
-                                    <div class="biqueira-tipo">PVC</div>
-                                    <div class="biqueira-desc">100 J<br>Químicos, leve</div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="section-block">
-                            <h3 class="section-title"><i class='bx bx-football'></i> Solado Antiderrapante (EN 20345)</h3>
-                            <div class="solado-grid">
-                                <div class="solado">SRA <span>Piso cerâmico + sabão</span></div>
-                                <div class="solado">SRB <span>Aço + glicerina</span></div>
-                                <div class="solado">SRC <span>SRA + SRB</span></div>
-                            </div>
+                    <div class="tipo-card">
+                        <div class="tipo-icon">2</div>
+                        <h4><strong>Biqueira Compósito</strong></h4>
+                        <p>Mais leve, <strong>não conduz eletricidade</strong>. Para <strong>eletricistas, aeroportos</strong>.</p>
+                        <div class="tipo-imagem">
+                            <img src="images/botas/biqueira-composito.jpg" alt="Bota com Biqueira Compósito">
                         </div>
                     </div>
-                </div>
-
-                <!-- SLIDE 4: USO CORRETO -->
-                <div class="carousel-item">
-                    <div class="slide-full">
-                        <h2><strong>Uso</strong> Correto das Botas</h2>
-                        <div class="passos-grid">
-                            <div class="passo">
-                                <i class='bx bx-ruler'></i>
-                                <h4>1. Escolha o número</h4>
-                                <p>Use com <strong>meia grossa</strong>. 1 cm de folga no bico.</p>
-                            </div>
-                            <div class="passo">
-                                <i class='bx bx-hand'></i>
-                                <h4>2. Amarre firme</h4>
-                                <p>Cadarsos bem ajustados evitam torção.</p>
-                            </div>
-                            <div class="passo">
-                                <i class='bx bx-search'></i>
-                                <h4>3. Inspecione</h4>
-                                <p>Solado, costura, biqueira antes do uso.</p>
-                            </div>
-                            <div class="passo">
-                                <i class='bx bx-water'></i>
-                                <h4>4. Seque bem</h4>
-                                <p>Nunca guarde úmida → mofo e odor.</p>
-                            </div>
-                        </div>
-                        <div class="dica-uso">
-                            <i class='bx bxs-bulb'></i>
-                            <p><strong>Dica:</strong> Use <strong>palmlha anatômica</strong> para conforto em turnos longos.</p>
+                    <div class="tipo-card">
+                        <div class="tipo-icon">3</div>
+                        <h4><strong>Antiperfuro</strong></h4>
+                        <p>Palmlha de <strong>kevlar ou aço</strong>. Protege contra <strong>pregos, vidros</strong>.</p>
+                        <div class="tipo-imagem">
+                            <img src="images/botas/bota-antoperfuro.jpg" alt="Bota Antiperfuro">
                         </div>
                     </div>
-                </div>
-
-                <!-- SLIDE 5: MANUTENÇÃO E DESCARTE -->
-                <div class="carousel-item">
-                    <div class="slide-full">
-                        <h2><strong>Manutenção</strong> e Quando Substituir</h2>
-
-                        <div class="section-block">
-                            <h3 class="section-title"><i class='bx bx-wrench'></i> Cuidados Diários</h3>
-                            <div class="checklist">
-                                <div class="check-item"><i class='bx bx-check-circle'></i>
-                                    <p>Limpe com <strong>escova e água</strong> (nunca gasolina)</p>
-                                </div>
-                                <div class="check-item"><i class='bx bx-check-circle'></i>
-                                    <p>Seque à <strong>sombra</strong>, longe de fontes de calor</p>
-                                </div>
-                                <div class="check-item"><i class='bx bx-check-circle'></i>
-                                    <p>Guarde em local <strong>arejado</strong>, sem peso em cima</p>
-                                </div>
-                                <div class="check-item"><i class='bx bx-check-circle'></i>
-                                    <p>Aplique <strong>impermeabilizante</strong> a cada 3 meses</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="section-block">
-                            <h3 class="section-title"><i class='bx bx-refresh'></i> Quando Descartar</h3>
-                            <div class="alertas-grid">
-                                <div class="alerta danger"><i class='bx bx-error'></i>
-                                    <p><strong>Solado gasto</strong> ou liso</p>
-                                </div>
-                                <div class="alerta danger"><i class='bx bx-error'></i>
-                                    <p><strong>Biqueira amassada</strong> ou rachada</p>
-                                </div>
-                                <div class="alerta warning"><i class='bx bx-time'></i>
-                                    <p><strong>Após 12 meses</strong> de uso intenso</p>
-                                </div>
-                                <div class="alerta warning"><i class='bx bx-droplet'></i>
-                                    <p><strong>Odor forte</strong> ou mofo interno</p>
-                                </div>
-                            </div>
+                    <div class="tipo-card">
+                        <div class="tipo-icon">4</div>
+                        <h4><strong>Isolante Elétrico</strong></h4>
+                        <p>Até <strong>18.000 V</strong>. Sola de borracha dielétrica.</p>
+                        <div class="tipo-imagem">
+                            <img src="images/botas/bota-de-seguranca-para-eletricista-03.jpg" alt="Bota Isolante Elétrica">
                         </div>
                     </div>
-                </div>
-
-                <!-- SLIDE 6: CONCLUSÃO -->
-                <div class="carousel-item">
-                    <div class="slide-conclusao">
-                        <div class="conclusao-container">
-                            <h2><i class='bx bx-check-double'></i> Conclusão</h2>
-                            <div class="conclusao-card">
-                                <p class="conclusao-texto">
-                                    As <strong>botas de segurança</strong> são a <strong>base da sua proteção</strong>. Escolha com <strong>biqueira adequada</strong>, <strong>solado antiderrapante</strong>, use com <strong>ajuste perfeito</strong> e
-                                    faça <strong>manutenção rigorosa</strong>. Um pé protegido é um trabalhador de pé.
-                                </p>
-                                <div class="conclusao-destaques">
-                                    <div class="destaque-item"><i class='bx bx-shield'></i>
-                                        <p><strong>Tipos:</strong> Aço, Compósito, Química</p>
-                                    </div>
-                                    <div class="destaque-item"><i class='bx bx-football'></i>
-                                        <p><strong>Solado:</strong> SRA, SRB, SRC</p>
-                                    </div>
-                                    <div class="destaque-item"><i class='bx bx-wrench'></i>
-                                        <p><strong>Cuidados:</strong> Limpeza, secagem, descarte</p>
-                                    </div>
-                                </div>
-                                <div class="conclusao-aviso">
-                                    <i class='bx bxs-error'></i>
-                                    <p><strong>Nunca use bota danificada.</strong><br>Uma <strong>escorregada muda tudo</strong>.</p>
-                                </div>
-                                <div class="conclusao-acao">
-                                    <a href="quiz-botas.html" class="btn-conclusao">
-                                        <i class='bx bx-trophy'></i> Fazer o Quiz e Ganhar Certificado
-                                    </a>
-                                </div>
-                            </div>
+                    <div class="tipo-card">
+                        <div class="tipo-icon">5</div>
+                        <h4><strong>Químicas</strong></h4>
+                        <p>Em <strong>PVC ou borracha nitrílica</strong>. Resiste a <strong>ácidos, óleos</strong>.</p>
+                        <div class="tipo-imagem">
+                            <img src="images/botas/bota-quimica.jpg" alt="Bota Química">
+                        </div>
+                    </div>
+                    <div class="tipo-card">
+                        <div class="tipo-icon">6</div>
+                        <h4><strong>Antiderrapante</strong></h4>
+                        <p>Sola <strong>SRA, SRB, SRC</strong>. Para <strong>pisos molhados, oleosos</strong>.</p>
+                        <div class="tipo-imagem">
+                            <img src="images/botas/bota-antidrrapnte.jpg" alt="Bota Antiderrapante">
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
 
-            <!-- CONTROLES -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#aulaCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#aulaCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon"></span>
-            </button>
+        <!-- BIQUEIRA E SOLADO -->
+        <div class="aula-block slide-full">
+            <h2>Biqueira e <strong>Solado</strong> O Coração da Bota</h2>
+            <div class="section-block">
+                <h3 class="section-title"><i class='bx bx-shield-quarter'></i> Tipos de Biqueira</h3>
+                <div class="biqueira-table">
+                    <div class="biqueira-item">
+                        <div class="biqueira-tipo">Aço</div>
+                        <div class="biqueira-desc">200 J<br>Mais barata, pesada</div>
+                    </div>
+                    <div class="biqueira-item">
+                        <div class="biqueira-tipo">Compósito</div>
+                        <div class="biqueira-desc">200 J<br>Leve, não condutora</div>
+                    </div>
+                    <div class="biqueira-item">
+                        <div class="biqueira-tipo">PVC</div>
+                        <div class="biqueira-desc">100 J<br>Químicos, leve</div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-block">
+                <h3 class="section-title"><i class='bx bx-football'></i> Solado Antiderrapante (EN 20345)</h3>
+                <div class="solado-grid">
+                    <div class="solado">SRA <span>Piso cerâmico + sabão</span></div>
+                    <div class="solado">SRB <span>Aço + glicerina</span></div>
+                    <div class="solado">SRC <span>SRA + SRB</span></div>
+                </div>
+            </div>
+        </div>
 
-            <!-- INDICADORES -->
-            <div class="aula-indicators">
-                <div class="indicator active" data-bs-target="#aulaCarousel" data-bs-slide-to="0"></div>
-                <div class="indicator" data-bs-target="#aulaCarousel" data-bs-slide-to="1"></div>
-                <div class="indicator" data-bs-target="#aulaCarousel" data-bs-slide-to="2"></div>
-                <div class="indicator" data-bs-target="#aulaCarousel" data-bs-slide-to="3"></div>
-                <div class="indicator" data-bs-target="#aulaCarousel" data-bs-slide-to="4"></div>
-                <div class="indicator" data-bs-target="#aulaCarousel" data-bs-slide-to="5"></div>
+        <!-- USO CORRETO -->
+        <div class="aula-block slide-full">
+            <h2><strong>Uso</strong> Correto das Botas</h2>
+            <div class="passos-grid">
+                <div class="passo">
+                    <i class='bx bx-ruler'></i>
+                    <h4>1. Escolha o número</h4>
+                    <p>Use com <strong>meia grossa</strong>. 1 cm de folga no bico.</p>
+                </div>
+                <div class="passo">
+                    <i class='bx bx-hand'></i>
+                    <h4>2. Amarre firme</h4>
+                    <p>Cadarsos bem ajustados evitam torção.</p>
+                </div>
+                <div class="passo">
+                    <i class='bx bx-search'></i>
+                    <h4>3. Inspecione</h4>
+                    <p>Solado, costura, biqueira antes do uso.</p>
+                </div>
+                <div class="passo">
+                    <i class='bx bx-water'></i>
+                    <h4>4. Seque bem</h4>
+                    <p>Nunca guarde úmida → mofo e odor.</p>
+                </div>
+            </div>
+            <div class="dica-uso">
+                <i class='bx bxs-bulb'></i>
+                <p><strong>Dica:</strong> Use <strong>palmlha anatômica</strong> para conforto em turnos longos.</p>
+            </div>
+        </div>
+
+        <!-- MANUTENÇÃO E DESCARTE -->
+        <div class="aula-block slide-full">
+            <h2><strong>Manutenção</strong> e Quando Substituir</h2>
+            <div class="section-block">
+                <h3 class="section-title"><i class='bx bx-wrench'></i> Cuidados Diários</h3>
+                <div class="checklist">
+                    <div class="check-item"><i class='bx bx-check-circle'></i>
+                        <p>Limpe com <strong>escova e água</strong> (nunca gasolina)</p>
+                    </div>
+                    <div class="check-item"><i class='bx bx-check-circle'></i>
+                        <p>Seque à <strong>sombra</strong>, longe de fontes de calor</p>
+                    </div>
+                    <div class="check-item"><i class='bx bx-check-circle'></i>
+                        <p>Guarde em local <strong>arejado</strong>, sem peso em cima</p>
+                    </div>
+                    <div class="check-item"><i class='bx bx-check-circle'></i>
+                        <p>Aplique <strong>impermeabilizante</strong> a cada 3 meses</p>
+                    </div>
+                </div>
+            </div>
+            <div class="section-block">
+                <h3 class="section-title"><i class='bx bx-refresh'></i> Quando Descartar</h3>
+                <div class="alertas-grid">
+                    <div class="alerta danger"><i class='bx bx-error'></i>
+                        <p><strong>Solado gasto</strong> ou liso</p>
+                    </div>
+                    <div class="alerta danger"><i class='bx bx-error'></i>
+                        <p><strong>Biqueira amassada</strong> ou rachada</p>
+                    </div>
+                    <div class="alerta warning"><i class='bx bx-time'></i>
+                        <p><strong>Após 12 meses</strong> de uso intenso</p>
+                    </div>
+                    <div class="alerta warning"><i class='bx bx-droplet'></i>
+                        <p><strong>Odor forte</strong> ou mofo interno</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CONCLUSÃO -->
+        <div class="aula-block slide-conclusao">
+            <div class="conclusao-container">
+                <h2><i class='bx bx-check-double'></i> Conclusão</h2>
+                <div class="conclusao-card">
+                    <p class="conclusao-texto">
+                        As <strong>botas de segurança</strong> são a <strong>base da sua proteção</strong>. Escolha com <strong>biqueira adequada</strong>, <strong>solado antiderrapante</strong>, use com <strong>ajuste perfeito</strong> e faça <strong>manutenção rigorosa</strong>.
+                        Um pé protegido é um trabalhador de pé.
+                    </p>
+                    <div class="conclusao-destaques">
+                        <div class="destaque-item"><i class='bx bx-shield'></i>
+                            <p><strong>Tipos:</strong> Aço, Compósito, Química</p>
+                        </div>
+                        <div class="destaque-item"><i class='bx bx-football'></i>
+                            <p><strong>Solado:</strong> SRA, SRB, SRC</p>
+                        </div>
+                        <div class="destaque-item"><i class='bx bx-wrench'></i>
+                            <p><strong>Cuidados:</strong> Limpeza, secagem, descarte</p>
+                        </div>
+                    </div>
+                    <div class="conclusao-aviso">
+                        <i class='bx bxs-error'></i>
+                        <p><strong>Nunca use bota danificada.</strong><br>Uma <strong>escorregada muda tudo</strong>.</p>
+                    </div>
+                    <div class="conclusao-acao">
+                        <a href="quiz.html?aula=botas" class="btn-conclusao">
+                            <i class='bx bx-trophy'></i> Jogar Quiz
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
 
         <!-- AÇÕES -->
         <div class="aula-actions">
-            <a href="quiz-botas.html" class="btn-primary">Fazer Quiz</a>
-            <a href="aulas.html" class="btn-secondary"><i class='bx bx-left-arrow-alt'></i> Voltar</a>
+            <a href="aulas.html" class="btn-secondary"><i class='bx bx-left-arrow-alt'></i> Voltar às Aulas</a>
         </div>
     </section>
 
@@ -337,23 +336,9 @@
     <script src="js/modo_escuro.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/aula-botas.js"></script>
-
     <script>
-        // Sticky header
         window.addEventListener('scroll', () => {
             document.querySelector('header').classList.toggle('sticky', window.scrollY > 0);
-        });
-
-        // Atualiza indicadores
-        const carousel = document.getElementById('aulaCarousel');
-        carousel.addEventListener('slid.bs.carousel', function() {
-            const indicators = document.querySelectorAll('.aula-indicators .indicator');
-            const activeIndex = Array.from(carousel.querySelectorAll('.carousel-item')).findIndex(item => item.classList.contains('active'));
-            indicators.forEach((ind, i) => {
-                ind.classList.toggle('active', i === activeIndex);
-            });
         });
     </script>
 </body>

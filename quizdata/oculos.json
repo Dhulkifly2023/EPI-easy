@@ -1,0 +1,92 @@
+[
+    {
+        "question": "Qual certificação brasileira é obrigatória para óculos de proteção, segundo a NR-6?",
+        "answers": [
+            { "text": "ISO 9001", "correct": false },
+            { "text": "ANSI Z87.1", "correct": false },
+            { "text": "CA (Certificado de Aprovação)", "correct": true },
+            { "text": "Selo INMETRO", "correct": false }
+        ]
+    },
+    {
+        "question": "Para trabalhos com solda e maçarico, qual tipo de óculos deve ser usado?",
+        "answers": [
+            { "text": "Contra Impactos (lente incolor)", "correct": false },
+            { "text": "Risco Biológico (vedado)", "correct": false },
+            { "text": "Risco Químico (antiembaçante)", "correct": false },
+            { "text": "Radiação UV/IR (lentes escuras/filtrantes)", "correct": true }
+        ]
+    },
+    {
+        "question": "Em hospitais e laboratórios, para proteger contra vírus, qual o modelo ideal?",
+        "answers": [
+            { "text": "Risco Biológico (design vedado)", "correct": true },
+            { "text": "Radiação UV/IR", "correct": false },
+            { "text": "Contra Impactos (armação normal)", "correct": false },
+            { "text": "Apenas óculos de grau", "correct": false }
+        ]
+    },
+    {
+        "question": "Qual é a forma correta de limpar os óculos de proteção?",
+        "answers": [
+            { "text": "Limpar a seco com a camisa", "correct": false },
+            { "text": "Usar solventes ou álcool", "correct": false },
+            { "text": "Apenas soprar a poeira", "correct": false },
+            { "text": "Lavar com água e sabão neutro", "correct": true }
+        ]
+    },
+    {
+        "question": "Quando se deve substituir imediatamente os óculos de proteção?",
+        "answers": [
+            { "text": "Quando a haste apertar a orelha", "correct": false },
+            { "text": "Se tiver riscos profundos na lente ou armação quebrada", "correct": true },
+            { "text": "A cada 6 meses, obrigatoriamente", "correct": false },
+            { "text": "Se a cor da armação desbotar", "correct": false }
+        ]
+    },
+    {
+        "question": "Como um trabalhador que usa óculos de grau deve se proteger?",
+        "answers": [
+            { "text": "Usando óculos de proteção comuns por cima dos de grau", "correct": false },
+            { "text": "Usando um modelo 'sobre-óculos' ou óculos de segurança graduados", "correct": true },
+            { "text": "Tirando os óculos de grau e usando apenas os de proteção", "correct": false },
+            { "text": "Os óculos de grau já oferecem proteção suficiente", "correct": false }
+        ]
+    },
+    {
+        "question": "Óculos para Risco Químico geralmente possuem qual característica especial?",
+        "answers": [
+            { "text": "Lentes mais escuras", "correct": false },
+            { "text": "Armação de metal", "correct": false },
+            { "text": "Lentes antiembaçantes e resistentes a ácidos", "correct": true },
+            { "text": "Fendas laterais para ventilação", "correct": false }
+        ]
+    },
+    {
+        "question": "Para trabalhos em construção ou marcenaria, qual o principal risco que os óculos protegem?",
+        "answers": [
+            { "text": "Impactos (poeira, cimento, resíduos)", "correct": true },
+            { "text": "Vírus e bactérias", "correct": false },
+            { "text": "Radiação de solda", "correct": false },
+            { "text": "Respingos de ácidos", "correct": false }
+        ]
+    },
+    {
+        "question": "Qual é um sinal de que os óculos NÃO estão bem ajustados?",
+        "answers": [
+            { "text": "A lente cobre toda a área ocular", "correct": false },
+            { "text": "Apoia no nariz sem apertar", "correct": false },
+            { "text": "A haste contorna a orelha sem folga", "correct": false },
+            { "text": "Eles escorregam pelo nariz ou deixam vãos laterais", "correct": true }
+        ]
+    },
+    {
+        "question": "A conclusão da aula alerta para NUNCA usar óculos riscados. Porquê?",
+        "answers": [
+            { "text": "Porque é esteticamente feio", "correct": false },
+            { "text": "Porque um risco pode distorcer a visão e virar uma lesão grave", "correct": true },
+            { "text": "Porque o CA perde a validade", "correct": false },
+            { "text": "Porque eles embaçam mais fácil", "correct": false }
+        ]
+    }
+]

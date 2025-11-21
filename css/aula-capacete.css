@@ -1,6 +1,6 @@
 /* ========================================
    AULA CAPACETE - DESIGN IMERSIVO
-   Slide 1: Texto | Slides 2-5: Fullscreen
+   Slide 1: Texto | Slides 2-6: Fullscreen
    ======================================== */
 
 .aula-section {
@@ -79,7 +79,7 @@
 }
 
 
-/* SLIDES FULLSCREEN (2 a 5) */
+/* SLIDES FULLSCREEN (2 a 6) */
 
 .slide-full {
     max-width: 1400px;
@@ -192,11 +192,6 @@
 
 
 /* CLASSES */
-
-
-/* ========================================
-   CLASSES – DESIGN LIMPO, SIMÉTRICO E PROFISSIONAL
-   ======================================== */
 
 .classes-container {
     display: grid;
@@ -327,22 +322,21 @@
 
 /* CORES DE IDENTIFICAÇÃO */
 
-.cores-table {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    max-width: 900px;
-    margin: 0 auto;
-    font-size: 1.05rem;
+.cores-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 16px;
+    max-width: 1000px;
+    margin: 30px auto 0;
 }
 
 .cor-item {
     padding: 16px 20px;
     border-radius: 16px;
-    text-align: left;
     background: white;
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
     transition: all 0.3s ease;
+    font-size: 1.05rem;
 }
 
 .cor-item:hover {
@@ -353,41 +347,6 @@
 .cor-item strong {
     color: #222;
     font-weight: 700;
-}
-
-
-/* PASSOS */
-
-.passos-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 25px;
-    margin-top: 40px;
-}
-
-.passo {
-    background: white;
-    padding: 25px;
-    border-radius: 24px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-.passo i {
-    font-size: 2.8rem;
-    color: #2fcdff;
-    margin-bottom: 15px;
-}
-
-.passo h4 {
-    font-size: 1.3rem;
-    color: #222;
-    margin-bottom: 12px;
-}
-
-.passo p {
-    font-size: 1.05rem;
-    color: #555;
 }
 
 
@@ -484,6 +443,94 @@
 }
 
 
+/* NOVO: RISCOS GRID (para o novo slide) */
+
+.riscos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 28px;
+    margin-top: 40px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.risco-card {
+    background: white;
+    padding: 28px 24px;
+    border-radius: 28px;
+    box-shadow: 0 15px 40px rgba(231, 76, 60, 0.15);
+    transition: all 0.4s ease;
+    border: 1px solid rgba(231, 76, 60, 0.2);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.risco-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 6px;
+    background: linear-gradient(90deg, #e74c3c, #c0392b);
+    border-radius: 28px 28px 0 0;
+}
+
+.risco-card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 25px 50px rgba(231, 76, 60, 0.25);
+}
+
+.risco-icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #e74c3c, #c0392b);
+    color: white;
+    font-size: 1.8rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 18px;
+    box-shadow: 0 8px 25px rgba(231, 76, 60, 0.3);
+}
+
+.risco-card h4 {
+    font-size: 1.35rem;
+    color: #222;
+    margin-bottom: 14px;
+    font-weight: 800;
+}
+
+.risco-card p {
+    font-size: 1.05rem;
+    color: #555;
+    line-height: 1.7;
+}
+
+.risco-dica {
+    background: linear-gradient(135deg, #fff8e1, #ffecb3);
+    padding: 22px;
+    border-radius: 24px;
+    max-width: 800px;
+    margin: 35px auto 0;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    font-size: 1.1rem;
+    border-left: 6px solid #f39c12;
+    box-shadow: 0 10px 30px rgba(243, 156, 18, 0.15);
+}
+
+.risco-dica i {
+    color: #f39c12;
+    font-size: 1.9rem;
+    flex-shrink: 0;
+}
+
+
 /* INDICADORES VISÍVEIS E CENTRALIZADOS */
 
 .aula-indicators {
@@ -519,7 +566,7 @@
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(0, 174, 255, 0.9);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
     opacity: 0.9;
 }
@@ -563,6 +610,19 @@
     .aula-title h1 {
         font-size: 3rem;
     }
+    /* Responsivo para riscos */
+    .riscos-grid {
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+    .risco-card {
+        padding: 24px 20px;
+    }
+    .risco-icon {
+        width: 55px;
+        height: 55px;
+        font-size: 1.6rem;
+    }
 }
 
 @media (max-width: 576px) {
@@ -573,9 +633,7 @@
         font-size: 2.3rem;
     }
     .tipo-card,
-    .passo,
-    .alerta,
-    .classe-card {
+    .alerta {
         padding: 20px;
     }
     .tipo-imagem img {
@@ -584,6 +642,16 @@
     .aula-indicators .indicator {
         width: 50px;
         height: 6px;
+    }
+    /* Responsivo mobile para riscos */
+    .risco-dica {
+        flex-direction: column;
+        text-align: center;
+        padding: 18px;
+        font-size: 1rem;
+    }
+    .risco-dica i {
+        margin-bottom: 8px;
     }
 }
 

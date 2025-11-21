@@ -1,0 +1,92 @@
+[
+    {
+        "question": "Segundo a introdução, qual Decreto regulamenta a Segurança no Trabalho em Moçambique e exige proteção respiratória?",
+        "answers": [
+            { "text": "Decreto n.º 56/2017", "correct": true },
+            { "text": "Decreto de Trânsito", "correct": false },
+            { "text": "Regulamento de Pesca", "correct": false },
+            { "text": "Norma ISO 14001", "correct": false }
+        ]
+    },
+    {
+        "question": "A máscara PFF2 (ou N95) é recomendada principalmente para qual tipo de proteção?",
+        "answers": [
+            { "text": "Apenas poeiras grossas de madeira", "correct": false },
+            { "text": "Gases ácidos fortes", "correct": false },
+            { "text": "Aerossóis, vírus e fungos (filtra 95%)", "correct": true },
+            { "text": "Falta de oxigénio", "correct": false }
+        ]
+    },
+    {
+        "question": "Qual é a doença pulmonar citada na aula como risco comum em minas (ex: Tete) e pedreiras?",
+        "answers": [
+            { "text": "Dermatite", "correct": false },
+            { "text": "Silicose", "correct": true },
+            { "text": "Gastrite", "correct": false },
+            { "text": "Conjuntivite", "correct": false }
+        ]
+    },
+    {
+        "question": "Na classificação de filtros químicos, o Filtro K protege contra qual substância?",
+        "answers": [
+            { "text": "Vapores orgânicos", "correct": false },
+            { "text": "Amoníaco", "correct": true },
+            { "text": "Gases ácidos", "correct": false },
+            { "text": "Partículas sólidas", "correct": false }
+        ]
+    },
+    {
+        "question": "Qual tipo de máscara deve ser usada obrigatoriamente em espaços confinados ou situações de incêndio?",
+        "answers": [
+            { "text": "PFF1", "correct": false },
+            { "text": "Semifacial com filtro A", "correct": false },
+            { "text": "Máscara Autônoma (AR)", "correct": true },
+            { "text": "Máscara de pano", "correct": false }
+        ]
+    },
+    {
+        "question": "Com que frequência deve ser realizado o Teste de Vedação (Fit Test) pelo usuário?",
+        "answers": [
+            { "text": "A cada turno de uso", "correct": true },
+            { "text": "Uma vez por mês", "correct": false },
+            { "text": "Apenas quando a máscara é nova", "correct": false },
+            { "text": "Anualmente", "correct": false }
+        ]
+    },
+    {
+        "question": "O que a aula diz sobre o uso de barba ou cicatrizes no rosto ao usar máscaras?",
+        "answers": [
+            { "text": "Ajudam a filtrar o ar", "correct": false },
+            { "text": "Comprometem a vedação e a segurança", "correct": true },
+            { "text": "Não fazem diferença", "correct": false },
+            { "text": "Melhoram o ajuste da máscara", "correct": false }
+        ]
+    },
+    {
+        "question": "Qual é o limite de proteção de uma máscara classificada como PFF2?",
+        "answers": [
+            { "text": "Até 4x o Limite de Exposição (LEO)", "correct": false },
+            { "text": "Até 10x o Limite de Exposição (LEO)", "correct": true },
+            { "text": "Até 50x o Limite de Exposição (LEO)", "correct": false },
+            { "text": "Proteção ilimitada", "correct": false }
+        ]
+    },
+    {
+        "question": "Como deve ser feita a limpeza de máscaras reutilizáveis (semifaciais)?",
+        "answers": [
+            { "text": "Com gasolina ou solvente", "correct": false },
+            { "text": "Apenas com pano seco", "correct": false },
+            { "text": "Com álcool 70% ou sabão neutro", "correct": true },
+            { "text": "Fervendo em água quente", "correct": false }
+        ]
+    },
+    {
+        "question": "Qual sinal indica que o filtro químico da máscara deve ser descartado imediatamente?",
+        "answers": [
+            { "text": "Se a cor externa mudar", "correct": false },
+            { "text": "Sentir odor ou gosto do produto dentro da máscara", "correct": true },
+            { "text": "Após 1 ano de guarda", "correct": false },
+            { "text": "Se a tira elástica estiver suja", "correct": false }
+        ]
+    }
+]

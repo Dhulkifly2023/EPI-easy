@@ -1,0 +1,92 @@
+[
+    {
+        "question": "O que significa a sigla EPI, segundo a definição apresentada na aula?",
+        "answers": [
+            { "text": "Equipamento de Protecção Industrial", "correct": false },
+            { "text": "Equipamento de Protecção Individual", "correct": true },
+            { "text": "Estratégia Para Indústrias", "correct": false },
+            { "text": "Equipamento de Prevenção Inteira", "correct": false }
+        ]
+    },
+    {
+        "question": "Segundo a Lei n.º 23/2007 (Lei do Trabalho de Moçambique), quem tem a obrigação de fornecer o EPI gratuitamente?",
+        "answers": [
+            { "text": "O Governo", "correct": false },
+            { "text": "O Trabalhador", "correct": false },
+            { "text": "O Empregador", "correct": true },
+            { "text": "O Sindicato", "correct": false }
+        ]
+    },
+    {
+        "question": "Qual é uma das responsabilidades do TRABALHADOR (Art. 215) em relação ao EPI?",
+        "answers": [
+            { "text": "Comprar o seu próprio equipamento", "correct": false },
+            { "text": "Usar sempre que necessário e conservar", "correct": true },
+            { "text": "Escolher a cor do capacete", "correct": false },
+            { "text": "Emprestar o seu EPI a outros colegas", "correct": false }
+        ]
+    },
+    {
+        "question": "O EPI substitui as medidas de protecção colectiva?",
+        "answers": [
+            { "text": "Sim, substitui totalmente", "correct": false },
+            { "text": "Sim, se o EPI for caro", "correct": false },
+            { "text": "Não, é complementar e obrigatório", "correct": true },
+            { "text": "Depende do tamanho da empresa", "correct": false }
+        ]
+    },
+    {
+        "question": "Para o risco 'Químico' (como vapores), qual é o EPI indicado na aula?",
+        "answers": [
+            { "text": "Capacete", "correct": false },
+            { "text": "Cinto", "correct": false },
+            { "text": "Protector Auricular", "correct": false },
+            { "text": "Máscara", "correct": true }
+        ]
+    },
+    {
+        "question": "Qual EPI é associado à protecção contra riscos 'Biológicos' (como vírus)?",
+        "answers": [
+            { "text": "Luvas", "correct": true },
+            { "text": "Botas", "correct": false },
+            { "text": "Capacete", "correct": false },
+            { "text": "Cinto ergonómico", "correct": false }
+        ]
+    },
+    {
+        "question": "O que implica a falta de um Certificado de Conformidade num EPI?",
+        "answers": [
+            { "text": "Que o EPI é mais barato", "correct": false },
+            { "text": "Que é ilegal e não garante a segurança", "correct": true },
+            { "text": "Que é de fabricação nacional", "correct": false },
+            { "text": "Que tem validade vitalícia", "correct": false }
+        ]
+    },
+    {
+        "question": "Qual é a regra fundamental sobre a modificação de um EPI?",
+        "answers": [
+            { "text": "Pode modificar para ficar mais bonito", "correct": false },
+            { "text": "Pode furar para ventilar melhor", "correct": false },
+            { "text": "Nunca modificar, pois perde a protecção", "correct": true },
+            { "text": "Pode pintar para identificar o dono", "correct": false }
+        ]
+    },
+    {
+        "question": "Após a limpeza, onde deve ser guardado o EPI?",
+        "answers": [
+            { "text": "Em local seco e arejado", "correct": true },
+            { "text": "Dentro de uma caixa fechada e úmida", "correct": false },
+            { "text": "No bolso da roupa de trabalho suja", "correct": false },
+            { "text": "Exposto ao sol directo", "correct": false }
+        ]
+    },
+    {
+        "question": "A conclusão da aula afirma que o EPI é:",
+        "answers": [
+            { "text": "Opcional se o trabalhador for experiente", "correct": false },
+            { "text": "A sua última linha de defesa", "correct": true },
+            { "text": "Apenas para evitar multas", "correct": false },
+            { "text": "Substituível por sorte", "correct": false }
+        ]
+    }
+]

@@ -1,0 +1,182 @@
+/* ========================================
+   QUIZ.CSS - Estilo para o jogo de Quiz
+   ======================================== */
+
+.quiz-section {
+    padding: 140px 8% 100px;
+    background: linear-gradient(135deg, #f5f9ff 0%, #e6f3ff 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quiz-container {
+    width: 100%;
+    max-width: 800px;
+    background: #ffffff;
+    border-radius: 28px;
+    box-shadow: 0 20px 60px rgba(47, 205, 255, 0.2);
+    padding: 40px;
+    border: 1px solid rgba(47, 205, 255, 0.3);
+}
+
+/* Título */
+#quiz-title {
+    font-size: 2.8rem;
+    font-weight: 900;
+    text-align: center;
+    background: linear-gradient(135deg, #2fcdff, #1ba8d4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 25px;
+}
+
+/* Barra de Progresso */
+#progress-text {
+    text-align: center;
+    font-weight: 600;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+#progress-bar-container {
+    width: 100%;
+    height: 10px;
+    background: #e0f7ff;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+#progress-bar {
+    height: 100%;
+    width: 10%; /* Começa em 10% para a questão 1 */
+    background: linear-gradient(135deg, #2fcdff, #1ba8d4);
+    border-radius: 5px;
+    transition: width 0.4s ease;
+}
+
+/* Pergunta */
+#question-text {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 30px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+/* Respostas */
+.answer-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+
+@media (min-width: 768px) {
+    .answer-grid {
+        grid-template-columns: 1fr 1fr; /* Duas colunas em ecrãs maiores */
+    }
+}
+
+.answer-btn {
+    width: 100%;
+    padding: 18px 25px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #333;
+    background: #f8fcff;
+    border: 2px solid #e0f7ff;
+    border-radius: 16px;
+    text-align: left;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.answer-btn:hover:not(:disabled) {
+    background: #e0f7ff;
+    border-color: #2fcdff;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(47, 205, 255, 0.15);
+}
+
+.answer-btn:disabled {
+    cursor: not-allowed;
+    opacity: 0.8;
+}
+
+/* Feedback de Resposta */
+.answer-btn.correct {
+    background: #e8f5e9;
+    border-color: #27ae60;
+    color: #27ae60;
+    font-weight: 700;
+}
+
+.answer-btn.incorrect {
+    background: #ffebee;
+    border-color: #e74c3c;
+    color: #e74c3c;
+    font-weight: 700;
+}
+
+/* Controles */
+#controls {
+    margin-top: 30px;
+    text-align: center;
+}
+
+#feedback-text {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+#feedback-text.correct {
+    color: #27ae60;
+}
+#feedback-text.incorrect {
+    color: #e74c3c;
+}
+
+#next-btn {
+    font-size: 1.1rem;
+    padding: 14px 40px;
+}
+
+/* Resultados */
+#results-container {
+    text-align: center;
+}
+
+#results-icon {
+    font-size: 6rem;
+    color: #ffc107; /* Cor de troféu */
+    margin-bottom: 20px;
+}
+
+#score-text {
+    font-size: 1.5rem;
+    color: #333;
+    font-weight: 600;
+}
+
+#score-percentage {
+    font-size: 4.5rem;
+    font-weight: 900;
+    margin: 10px 0;
+}
+
+#score-feedback {
+    font-size: 1.2rem;
+    color: #555;
+    font-style: italic;
+    margin-bottom: 30px;
+}
+
+.results-actions {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}

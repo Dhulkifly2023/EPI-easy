@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-MZ">
 
 <head>
     <meta charset="UTF-8">
@@ -11,7 +11,7 @@
     <link rel="icon" href="https://via.placeholder.com/32x32/2fcdff/ffffff?text=E" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
-    <!-- Bootstrap 5 -->
+    <!-- Bootstrap 5 (só CSS – JS removido) -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- CSS do site -->
@@ -33,11 +33,10 @@
                 <h1>EPI Easy!</h1>
             </a>
             <nav class="menu" id="menu">
-                <a href="index.html#home">Home</a>
+                <a href="index.html#home">Início</a>
                 <a href="aulas.html">Aulas</a>
                 <a href="sobre.html">Sobre</a>
             </nav>
-
         </div>
     </header>
 
@@ -45,224 +44,236 @@
     <section class="aula-section">
         <div class="aula-title">
             <h1>Aula-4: Luvas de Proteção</h1>
-            <p class="subtitle">Escolha, uso e manutenção do EPI que protege suas mãos o bem mais valioso do trabalhador.</p>
+            <p class="subtitle">Escolha, uso e manutenção do EPI que protege as suas mãos – o bem mais valioso do trabalhador moçambicano.</p>
         </div>
 
-        <!-- CARROSSEL -->
-        <div id="aulaCarousel" class="carousel slide" data-bs-ride="false" data-bs-touch="true">
-            <div class="carousel-inner">
+        <!-- ==================== 1. INTRODUÇÃO (CONTEXTO MOÇAMBIQUE) ==================== -->
+        <div class="slide-intro">
+            <div class="intro-text">
+                <h2>Introdução às <strong>Luvas de Proteção</strong></h2>
+                <p>As <strong>luvas de segurança</strong> são o <strong>EPI mais utilizado em Moçambique</strong>, protegendo contra <strong>cortes, perfurações, produtos químicos, calor, frio, choques eléctricos e vibrações</strong> em sectores como construção
+                    civil, portos, agricultura, indústria extractiva e saúde.</p>
+                <p>De acordo com a <strong>Lei nº 23/2007</strong> e o <strong>Decreto nº 45/2014</strong> (Regulamento de Segurança e Saúde no Trabalho), o empregador é <strong>obrigado a fornecer luvas certificadas</strong> e adequadas ao risco. A escolha
+                    errada pode causar <strong>acidentes graves, amputações ou dermatites ocupacionais</strong>.</p>
+                <p>Nesta aula, você aprenderá os <strong>tipos por material e risco</strong>, como escolher pelo <strong>índice de protecção</strong>, <strong>técnicas de uso</strong>, <strong>manutenção</strong> e <strong>sinais de descarte</strong>. Suas
+                    mãos merecem a melhor protecção!</p>
+            </div>
+            <div class="intro-image">
+                <img src="images/Somos a Potencya do Brasil, referência há mais de….jpg" alt="Trabalhador moçambicano usando luvas de protecção">
+            </div>
+        </div>
 
-                <!-- SLIDE 1: INTRODUÇÃO -->
-                <div class="carousel-item active">
-                    <div class="slide-intro">
-                        <div class="intro-text">
-                            <h2>Introdução às <strong>Luvas de Proteção</strong></h2>
-                            <p>As <strong>luvas de segurança</strong> são o <strong>EPI mais utilizado</strong> no mundo, protegendo contra <strong>cortes, perfurações, produtos químicos, calor, frio, choques elétricos e vibrações</strong>.</p>
-                            <p>Segundo a <strong>NR-6</strong>, o empregador deve fornecer luvas <strong>certificadas</strong> e adequadas ao risco. A escolha errada pode causar <strong>acidentes graves</strong> ou <strong>dermatites ocupacionais</strong>.</p>
-                            <p>Nesta aula, você aprenderá os <strong>tipos por material e risco</strong>, como escolher pelo <strong>índice de proteção</strong>, <strong>técnicas de uso</strong>, <strong>manutenção</strong> e <strong>sinais de descarte</strong>.
-                                Suas mãos merecem a melhor proteção!</p>
-                        </div>
-                        <div class="intro-image">
-                            <img src="images/Somos a Potencya do Brasil, referência há mais de….jpg" alt="Luvas de Proteção">
-                        </div>
-                    </div>
-                </div>
 
-                <!-- SLIDE 2: TIPOS POR MATERIAL -->
-                <div class="carousel-item">
-                    <div class="slide-full">
-                        <h2>Tipos de Luvas por <strong>Material</strong></h2>
 
-                        <div class="section-block">
-                            <h3 class="section-title"><i class='bx bx-shield'></i> Materiais e Aplicações</h3>
-                            <div class="tipos-grid">
-                                <div class="tipo-card">
-                                    <div class="tipo-icon">1</div>
-                                    <h4><strong>Látex</strong></h4>
-                                    <p>Flexível, elástico. Ideal para <strong>manipulação de alimentos, saúde e limpeza leve</strong>.</p>
-                                    <div class="tipo-imagem">
-                                        <img src="images/luvas/luva-de-latex.jpg" alt="Luva de Látex">
-                                    </div>
-                                </div>
-                                <div class="tipo-card">
-                                    <div class="tipo-icon">2</div>
-                                    <h4><strong>Nitrílica</strong></h4>
-                                    <p>Resistente a <strong>óleo, graxa, solventes</strong>. Sem látex → evita alergias.</p>
-                                    <div class="tipo-imagem">
-                                        <img src="images/luvas/luva-nitrilica.jpg" alt="Luva Nitrílica">
-                                    </div>
-                                </div>
-                                <div class="tipo-card">
-                                    <div class="tipo-icon">3</div>
-                                    <h4><strong>PVC / Vinil</strong></h4>
-                                    <p>Barata, resistente a <strong>ácidos e álcalis</strong>. Uso em <strong>química leve</strong>.</p>
-                                    <div class="tipo-imagem">
-                                        <img src="images/luvas/luva-vinilica.jpg" alt="Luva de PVC">
-                                    </div>
-                                </div>
-                                <div class="tipo-card">
-                                    <div class="tipo-icon">4</div>
-                                    <h4><strong>Couro</strong></h4>
-                                    <p>Alta <strong>resistência mecânica</strong>. Para <strong>soldagem, manuseio de ferramentas</strong>.</p>
-                                    <div class="tipo-imagem">
-                                        <img src="images/luvas/luva-de-couro.jpg" alt="Luva de Couro">
-                                    </div>
-                                </div>
-                                <div class="tipo-card">
-                                    <div class="tipo-icon">5</div>
-                                    <h4><strong>Kevlar / Aramida</strong></h4>
-                                    <p>Resiste a <strong>corte nível 5</strong>. Para <strong>vidro, metal, corte industrial</strong>.</p>
-                                    <div class="tipo-imagem">
-                                        <img src="images/luvas/luva Kevlar  Aramida.jpg" alt="Luva de Kevlar">
-                                    </div>
-                                </div>
-                                <div class="tipo-card">
-                                    <div class="tipo-icon">6</div>
-                                    <h4><strong>Isolante Elétrico</strong></h4>
-                                    <p>Classe 00 a 4. Protege até <strong>36.000 V</strong>. Obrigatório em redes energizadas.</p>
-                                    <div class="tipo-imagem">
-                                        <img src="images/luvas/luva isolante-eletrico.jpg" alt="Luva Isolante Elétrica">
-                                    </div>
-                                </div>
-                            </div>
+        <!-- ==================== 3. TIPOS POR MATERIAL ==================== -->
+        <div class="slide-full">
+            <h2>Tipos de Luvas por <strong>Material</strong></h2>
+
+            <div class="section-block">
+                <h3 class="section-title"><i class='bx bx-shield'></i> Materiais e Aplicações</h3>
+                <div class="tipos-grid">
+                    <div class="tipo-card">
+                        <div class="tipo-icon">1</div>
+                        <h4><strong>Látex</strong></h4>
+                        <p>Flexível, elástico. Ideal para <strong>manipulação de alimentos, saúde e limpeza leve</strong>.</p>
+                        <div class="tipo-imagem">
+                            <img src="images/luvas/luva-de-latex.jpg" alt="Luva de Látex">
                         </div>
                     </div>
-                </div>
-
-
-                <!-- SLIDE 3: USO E TÉCNICA CORRETA -->
-                <div class="carousel-item">
-                    <div class="slide-full">
-                        <h2><strong>Uso</strong> Correto das Luvas</h2>
-                        <div class="passos-grid">
-                            <div class="passo">
-                                <i class='bx bx-ruler'></i>
-                                <h4>1. Escolha o tamanho</h4>
-                                <p>Deve ajustar sem folga ou aperto excessivo.</p>
-                            </div>
-                            <div class="passo">
-                                <i class='bx bx-hand'></i>
-                                <h4>2. Inspecione antes</h4>
-                                <p>Verifique furos, rasgos ou desgaste.</p>
-                            </div>
-                            <div class="passo">
-                                <i class='bx bx-water'></i>
-                                <h4>3. Lave as mãos</h4>
-                                <p>Evite suor e contaminação interna.</p>
-                            </div>
-                            <div class="passo">
-                                <i class='bx bx-refresh'></i>
-                                <h4>4. Vire do avesso</h4>
-                                <p>Ao retirar, evite contato com a parte externa.</p>
-                            </div>
-                        </div>
-                        <div class="dica-uso">
-                            <i class='bx bxs-bulb'></i>
-                            <p><strong>Dica:</strong> Em risco químico, use <strong>luva interna de algodão</strong> para absorver suor.</p>
+                    <div class="tipo-card">
+                        <div class="tipo-icon">2</div>
+                        <h4><strong>Nitrílica</strong></h4>
+                        <p>Resistente a <strong>óleo, graxa, solventes</strong>. Sem látex → evita alergias.</p>
+                        <div class="tipo-imagem">
+                            <img src="images/luvas/luva-nitrilica.jpg" alt="Luva Nitrílica">
                         </div>
                     </div>
-                </div>
-
-                <!-- SLIDE 4: MANUTENÇÃO E SUBSTITUIÇÃO -->
-                <div class="carousel-item">
-                    <div class="slide-full">
-                        <h2><strong>Manutenção</strong> e Quando Substituir</h2>
-
-                        <div class="section-block">
-                            <h3 class="section-title"><i class='bx bx-wrench'></i> Cuidados Diários</h3>
-                            <div class="checklist">
-                                <div class="check-item"><i class='bx bx-check-circle'></i>
-                                    <p>Limpe com <strong>água e sabão neutro</strong> (nunca solventes)</p>
-                                </div>
-                                <div class="check-item"><i class='bx bx-check-circle'></i>
-                                    <p>Seque ao ar livre, <strong>nunca em estufa</strong></p>
-                                </div>
-                                <div class="check-item"><i class='bx bx-check-circle'></i>
-                                    <p>Guarde em local <strong>fresco, seco e sem luz solar</strong></p>
-                                </div>
-                                <div class="check-item"><i class='bx bx-check-circle'></i>
-                                    <p>Inspecione <strong>antes e após o uso</strong></p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="section-block">
-                            <h3 class="section-title"><i class='bx bx-refresh'></i> Quando Substituir</h3>
-                            <div class="alertas-grid">
-                                <div class="alerta danger"><i class='bx bx-error'></i>
-                                    <p><strong>Furo, rasgo ou perfuração</strong></p>
-                                </div>
-                                <div class="alerta danger"><i class='bx bx-error'></i>
-                                    <p><strong>Desgaste visível</strong> na palma ou dedos</p>
-                                </div>
-                                <div class="alerta warning"><i class='bx bx-time'></i>
-                                    <p><strong>Após 6 meses</strong> de uso intenso</p>
-                                </div>
-                                <div class="alerta warning"><i class='bx bx-droplet'></i>
-                                    <p><strong>Contaminação química</strong> irreversível</p>
-                                </div>
-                            </div>
+                    <div class="tipo-card">
+                        <div class="tipo-icon">3</div>
+                        <h4><strong>PVC / Vinil</strong></h4>
+                        <p>Barata, resistente a <strong>ácidos e álcalis</strong>. Uso em <strong>química leve</strong>.</p>
+                        <div class="tipo-imagem">
+                            <img src="images/luvas/luva-vinilica.jpg" alt="Luva de PVC">
                         </div>
                     </div>
-                </div>
-
-                <!-- SLIDE 5: CONCLUSÃO -->
-                <div class="carousel-item">
-                    <div class="slide-conclusao">
-                        <div class="conclusao-container">
-                            <h2><i class='bx bx-check-double'></i> Conclusão</h2>
-                            <div class="conclusao-card">
-                                <p class="conclusao-texto">
-                                    As <strong>luvas de proteção</strong> são o <strong>escudo das mãos</strong>. Escolher o <strong>material certo</strong>, interpretar o <strong>EN 388</strong>, usar com <strong>técnica adequada</strong> e fazer <strong>manutenção rigorosa</strong>                                    evita acidentes e preserva sua capacidade de trabalho.
-                                </p>
-                                <div class="conclusao-destaques">
-                                    <div class="destaque-item"><i class='bx bx-shield'></i>
-                                        <p><strong>Materiais:</strong> Látex, Nitrílica, Kevlar, Couro</p>
-                                    </div>
-                                    <div class="destaque-item"><i class='bx bx-bar-chart-alt-2'></i>
-                                        <p><strong>EN 388:</strong> Abrasão, Corte, Rasgo, Perfuração</p>
-                                    </div>
-                                    <div class="destaque-item"><i class='bx bx-wrench'></i>
-                                        <p><strong>Cuidados:</strong> Inspeção, limpeza, descarte</p>
-                                    </div>
-                                </div>
-                                <div class="conclusao-aviso">
-                                    <i class='bx bxs-error'></i>
-                                    <p><strong>Nunca use luva danificada.</strong><br>Uma <strong>mão ferida muda uma vida</strong>.</p>
-                                </div>
-                                <div class="conclusao-acao">
-                                    <a href="quiz-luvas.html" class="btn-conclusao">
-                                        <i class='bx bx-trophy'></i> Fazer o Quiz e Ganhar Certificado
-                                    </a>
-                                </div>
-                            </div>
+                    <div class="tipo-card">
+                        <div class="tipo-icon">4</div>
+                        <h4><strong>Couro</strong></h4>
+                        <p>Alta <strong>resistência mecânica</strong>. Para <strong>soldagem, manuseio de ferramentas</strong>.</p>
+                        <div class="tipo-imagem">
+                            <img src="images/luvas/luva-de-couro.jpg" alt="Luva de Couro">
+                        </div>
+                    </div>
+                    <div class="tipo-card">
+                        <div class="tipo-icon">5</div>
+                        <h4><strong>Kevlar / Aramida</strong></h4>
+                        <p>Resiste a <strong>corte nível 5</strong>. Para <strong>vidro, metal, corte industrial</strong>.</p>
+                        <div class="tipo-imagem">
+                            <img src="images/luvas/luva Kevlar  Aramida.jpg" alt="Luva de Kevlar">
+                        </div>
+                    </div>
+                    <div class="tipo-card">
+                        <div class="tipo-icon">6</div>
+                        <h4><strong>Isolante Eléctrico</strong></h4>
+                        <p>Classe 00 a 4. Protege até <strong>36.000 V</strong>. Obrigatório em redes energizadas.</p>
+                        <div class="tipo-imagem">
+                            <img src="images/luvas/luva isolante-eletrico.jpg" alt="Luva Isolante Eléctrica">
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+        <!-- ==================== 2. PRINCIPAIS RISCOS (NOVA SEÇÃO) ==================== -->
+        <div class="slide-full">
+            <h2>Principais <strong>Riscos</strong> às Mãos em Moçambique</h2>
 
-            <!-- CONTROLES -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#aulaCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#aulaCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon"></span>
-            </button>
+            <div class="section-block">
+                <h3 class="section-title"><i class='bx bx-warning'></i> Riscos por Sector</h3>
+                <div class="riscos-grid">
+                    <div class="risco-card">
+                        <div class="risco-icon"><i class='bx bx-cut'></i></div>
+                        <h4><strong>Cortes e Perfurações</strong></h4>
+                        <p>Comum em <strong>portos (Maputo, Beira, Nacala)</strong>, construção e metalomecânica. Ferramentas, arames e chapas são os principais agentes.</p>
+                    </div>
+                    <div class="risco-card">
+                        <div class="risco-icon"><i class='bx bx-droplet'></i></div>
+                        <h4><strong>Produtos Químicos</strong></h4>
+                        <p>Em <strong>indústrias de fertilizantes, limpeza hospitalar e agricultura</strong>. Ácidos, óleos e pesticidas causam dermatites graves.</p>
+                    </div>
+                    <div class="risco-card">
+                        <div class="risco-icon"><i class='bx bxs-zap'></i></div>
+                        <h4><strong>Choques Eléctricos</strong></h4>
+                        <p>Frequente em <strong>manutenção de redes EDM</strong> e obras eléctricas. Luvas isolantes são obrigatórias até 36.000 V.</p>
+                    </div>
+                    <div class="risco-card">
+                        <div class="risco-icon"><i class='bx bxs-flame'></i></div>
+                        <h4><strong>Queimaduras Térmicas</strong></h4>
+                        <p>Em <strong>soldagem, fundições e cozinhas industriais</strong>. Luvas de couro ou Kevlar resistem até 500°C.</p>
+                    </div>
+                    <div class="risco-card">
+                        <div class="risco-icon"><i class='bx bx-leaf'></i></div>
+                        <h4><strong>Riscos Biológicos</strong></h4>
+                        <p>Em <strong>hospitais e laboratórios</strong>. Luvas de látex ou nitrílica evitam contaminações por sangue e fluidos.</p>
+                    </div>
+                    <div class="risco-card">
+                        <div class="risco-icon"><i class='bx bx-shield-x'></i></div>
+                        <h4><strong>Vibrações e Impactos</strong></h4>
+                        <p>Em <strong>minas de carvão (Tete) e perfuração</strong>. Luvas com palmilha acolchoada reduzem lesões por vibração.</p>
+                    </div>
+                </div>
+            </div>
 
-            <!-- INDICADORES -->
-            <div class="aula-indicators">
-                <div class="indicator active" data-bs-target="#aulaCarousel" data-bs-slide-to="0"></div>
-                <div class="indicator" data-bs-target="#aulaCarousel" data-bs-slide-to="1"></div>
-                <div class="indicator" data-bs-target="#aulaCarousel" data-bs-slide-to="2"></div>
-                <div class="indicator" data-bs-target="#aulaCarousel" data-bs-slide-to="3"></div>
-                <div class="indicator" data-bs-target="#aulaCarousel" data-bs-slide-to="4"></div>
+            <div class="dica-risco">
+                <i class='bx bxs-bulb'></i>
+                <p><strong>Dica MITESS:</strong> Todo acidente com mãos deve ser comunicado ao <strong>INSS em até 48 horas</strong>. A não utilização de luvas é <strong>infração grave</strong>.</p>
+            </div>
+        </div>
+        <!-- ==================== 4. USO E TÉCNICA CORRETA ==================== -->
+        <div class="slide-full">
+            <h2><strong>Uso</strong> Correto das Luvas</h2>
+            <div class="passos-grid">
+                <div class="passo">
+                    <i class='bx bx-ruler'></i>
+                    <h4>1. Escolha o tamanho</h4>
+                    <p>Deve ajustar sem folga ou aperto excessivo.</p>
+                </div>
+                <div class="passo">
+                    <i class='bx bx-hand'></i>
+                    <h4>2. Inspecione antes</h4>
+                    <p>Verifique furos, rasgos ou desgaste.</p>
+                </div>
+                <div class="passo">
+                    <i class='bx bx-water'></i>
+                    <h4>3. Lave as mãos</h4>
+                    <p>Evite suor e contaminação interna.</p>
+                </div>
+                <div class="passo">
+                    <i class='bx bx-refresh'></i>
+                    <h4>4. Vire do avesso</h4>
+                    <p>Ao retirar, evite contacto com a parte externa.</p>
+                </div>
+            </div>
+            <div class="dica-uso">
+                <i class='bx bxs-bulb'></i>
+                <p><strong>Dica:</strong> Em risco químico, use <strong>luva interna de algodão</strong> para absorver suor.</p>
+            </div>
+        </div>
 
+        <!-- ==================== 5. MANUTENÇÃO E SUBSTITUIÇÃO ==================== -->
+        <div class="slide-full">
+            <h2><strong>Manutenção</strong> e Quando Substituir</h2>
+
+            <div class="section-block">
+                <h3 class="section-title"><i class='bx bx-wrench'></i> Cuidados Diários</h3>
+                <div class="checklist">
+                    <div class="check-item"><i class='bx bx-check-circle'></i>
+                        <p>Limpe com <strong>água e sabão neutro</strong> (nunca solventes)</p>
+                    </div>
+                    <div class="check-item"><i class='bx bx-check-circle'></i>
+                        <p>Seque ao ar livre, <strong>nunca em estufa</strong></p>
+                    </div>
+                    <div class="check-item"><i class='bx bx-check-circle'></i>
+                        <p>Guarde em local <strong>fresco, seco e sem luz solar</strong></p>
+                    </div>
+                    <div class="check-item"><i class='bx bx-check-circle'></i>
+                        <p>Inspecione <strong>antes e após o uso</strong></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-block">
+                <h3 class="section-title"><i class='bx bx-refresh'></i> Quando Substituir</h3>
+                <div class="alertas-grid">
+                    <div class="alerta danger"><i class='bx bx-error'></i>
+                        <p><strong>Furo, rasgo ou perfuração</strong></p>
+                    </div>
+                    <div class="alerta danger"><i class='bx bx-error'></i>
+                        <p><strong>Desgaste visível</strong> na palma ou dedos</p>
+                    </div>
+                    <div class="alerta warning"><i class='bx bx-time'></i>
+                        <p><strong>Após 6 meses</strong> de uso intenso</p>
+                    </div>
+                    <div class="alertascribes warning"><i class='bx bx-droplet'></i>
+                        <p><strong>Contaminação química</strong> irreversível</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ==================== 6. CONCLUSÃO ==================== -->
+        <div class="slide-conclusao">
+            <div class="conclusao-container">
+                <h2><i class='bx bx-check-double'></i> Conclusão</h2>
+                <div class="conclusao-card">
+                    <p class="conclusao-texto">
+                        As <strong>luvas de protecção</strong> são o <strong>escudo das mãos</strong>. Escolher o <strong>material certo</strong>, interpretar o <strong>EN 388</strong>, usar com <strong>técnica adequada</strong> e fazer <strong>manutenção rigorosa</strong>                        evita acidentes e preserva sua capacidade de trabalho.
+                    </p>
+                    <div class="conclusao-destaques">
+                        <div class="destaque-item"><i class='bx bx-shield'></i>
+                            <p><strong>Materiais:</strong> Látex, Nitrílica, Kevlar, Couro</p>
+                        </div>
+                        <div class="destaque-item"><i class='bx bx-bar-chart-alt-2'></i>
+                            <p><strong>EN 388:</strong> Abrasão, Corte, Rasgo, Perfuração</p>
+                        </div>
+                        <div class="destaque-item"><i class='bx bx-wrench'></i>
+                            <p><strong>Cuidados:</strong> Inspecção, limpeza, descarte</p>
+                        </div>
+                    </div>
+                    <div class="conclusao-aviso">
+                        <i class='bx bxs-error'></i>
+                        <p><strong>Nunca use luva danificada.</strong><br>Uma <strong>mão ferida muda uma vida</strong>.</p>
+                    </div>
+                    <div class="conclusao-acao">
+                        <a href="quiz.html?aula=luvas" class="btn-conclusao">
+                            <i class='bx bx-trophy'></i> Jogar Quiz
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
 
         <!-- AÇÕES -->
         <div class="aula-actions">
-            <a href="quiz-luvas.html" class="btn-primary">Fazer Quiz</a>
             <a href="aulas.html" class="btn-secondary"><i class='bx bx-left-arrow-alt'></i> Voltar</a>
         </div>
     </section>
@@ -303,23 +314,11 @@
     <script src="js/modo_escuro.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/aula-luvas.js"></script>
-
+    <!-- Bootstrap JS REMOVIDO (não necessário) -->
     <script>
         // Sticky header
         window.addEventListener('scroll', () => {
             document.querySelector('header').classList.toggle('sticky', window.scrollY > 0);
-        });
-
-        // Atualiza indicadores
-        const carousel = document.getElementById('aulaCarousel');
-        carousel.addEventListener('slid.bs.carousel', function() {
-            const indicators = document.querySelectorAll('.aula-indicators .indicator');
-            const activeIndex = Array.from(carousel.querySelectorAll('.carousel-item')).findIndex(item => item.classList.contains('active'));
-            indicators.forEach((ind, i) => {
-                ind.classList.toggle('active', i === activeIndex);
-            });
         });
     </script>
 </body>

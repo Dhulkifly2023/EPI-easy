@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-MZ">
 
 <head>
     <meta charset="UTF-8">
@@ -11,7 +11,7 @@
     <link rel="icon" href="https://via.placeholder.com/32x32/2fcdff/ffffff?text=E" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
-    <!-- Bootstrap 5 -->
+    <!-- Bootstrap 5 (apenas grid e utilitários) -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- CSS do site -->
@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="css/modo_escuro.css">
     <link rel="stylesheet" href="css/escuro_index.css">
 
-    <!-- CSS da aula -->
+    <!-- CSS da aula (versão ESTÁTICA) -->
     <link rel="stylesheet" href="css/aula-protetor-auricular.css">
 </head>
 
@@ -37,252 +37,230 @@
                 <a href="aulas.html">Aulas</a>
                 <a href="sobre.html">Sobre</a>
             </nav>
-
-        </div>
         </div>
     </header>
 
-    <!-- AULA -->
+    <!-- AULA (ESTÁTICA - SEM CARROSSEL) -->
     <section class="aula-section">
         <div class="aula-title">
             <h1>Aula-3: Protetor Auricular</h1>
-            <p class="subtitle">Aprenda a escolher, usar e manter o EPI que protege sua audição com eficiência.</p>
+            <p class="subtitle">Proteja sua audição em ambientes ruidosos com o EPI certo</p>
         </div>
 
-        <!-- CARROSSEL -->
-        <div id="aulaCarousel" class="carousel slide" data-bs-ride="false" data-bs-touch="true">
-            <div class="carousel-inner">
+        <!-- SEÇÃO 1: INTRODUÇÃO -->
+        <div class="aula-block slide-intro">
+            <div class="intro-text">
+                <h2>Introdução ao <strong>Protetor Auricular</strong></h2>
+                <p>O <strong>protetor auricular</strong> é um <strong>EPI obrigatório</strong> para prevenir a <strong>perda auditiva induzida por ruído (PAIR)</strong>, uma das principais doenças ocupacionais em Moçambique, especialmente em indústrias,
+                    minas e construção.</p>
+                <p>De acordo com o <strong>Decreto n.º 56/2017 (SST)</strong> e a <strong>Lei n.º 23/2007 (Lei do Trabalho)</strong>, ambientes com ruído acima de <strong>85 dB(A)</strong> por 8 horas exigem proteção auditiva com <strong>CA válido</strong>.
+                    O uso correto reduz até <strong>30 dB</strong> de exposição.</p>
+                <p>Nesta aula, você aprenderá os <strong>principais riscos auditivos</strong>, <strong>tipos de protetores</strong>, cálculo do <strong>NRR efetivo</strong>, <strong>inserção correta</strong>, <strong>higienização</strong> e <strong>substituição</strong>.
+                    Proteger os ouvidos é essencial para a saúde a longo prazo!</p>
+            </div>
+            <div class="intro-image">
+                <img src="images/Le casque antibruit Peltor Optime III 3M est….jpg" alt="Protetor Auricular">
+            </div>
+        </div>
 
-                <!-- SLIDE 1: INTRODUÇÃO -->
-                <div class="carousel-item active">
-                    <div class="slide-intro">
-                        <div class="intro-text">
-                            <h2>Introdução ao <strong>Protetor Auricular</strong></h2>
-                            <p>O <strong>protetor auricular</strong> é um <strong>EPI essencial</strong> para prevenir <strong>perda auditiva induzida por ruído (PAIR)</strong>, uma das doenças ocupacionais mais comuns no Brasil.</p>
-                            <p>Ambientes com níveis de ruído acima de <strong>85 dB(A)</strong> por 8 horas exigem proteção auditiva obrigatória conforme a <strong>NR-15</strong>. O uso correto reduz em até <strong>30 dB</strong> a exposição sonora, preservando
-                                a saúde auditiva a longo prazo.</p>
-                            <p>Nesta aula, você aprenderá os <strong>tipos de protetores</strong>, como calcular o <strong>NRR</strong>, técnicas de <strong>inserção correta</strong>, <strong>higienização</strong> e <strong>sinais de substituição</strong>.
-                                Proteger os ouvidos é investir na sua qualidade de vida!</p>
-                        </div>
-                        <div class="intro-image">
-                            <img src="images/Le casque antibruit Peltor Optime III 3M est….jpg" alt="Protetor Auricular">
-                        </div>
+        <!-- SEÇÃO 2: RISCOS AUDITIVOS -->
+
+        <!-- SEÇÃO 3: TIPOS DE PROTETORES -->
+        <div class="aula-block slide-full">
+            <h2>Tipos de <strong>Protetores Auriculares</strong></h2>
+
+            <h3 class="section-title"><i class='bx bx-headphone'></i> Classificação por Modelo</h3>
+            <div class="tipos-grid">
+                <div class="tipo-card">
+                    <div class="tipo-icon">1</div>
+                    <h4><strong>Plug (Inserção)</strong></h4>
+                    <p>Espuma, silicone ou flange. Inserido no canal. Alta atenuação.</p>
+                    <div class="tipo-imagem">
+                        <img src="images/protetor-autivo-de inserção.jpg" alt="Plug de Espuma">
                     </div>
                 </div>
-
-                <!-- SLIDE 2: TIPOS DE PROTETORES -->
-                <div class="carousel-item">
-                    <div class="slide-full">
-                        <h2>Tipos de <strong>Protetores Auriculares</strong></h2>
-
-                        <div class="section-block">
-                            <h3 class="section-title"><i class='bx bx-headphone'></i> Classificação por Modelo</h3>
-                            <div class="tipos-grid">
-                                <div class="tipo-card">
-                                    <div class="tipo-icon">1</div>
-                                    <h4><strong>Plug (Inserção)</strong></h4>
-                                    <p>Feito de <strong>espuma, silicone ou flange</strong>. Inserido no canal auditivo. Ideal para <strong>alta atenuação</strong> e uso prolongado.</p>
-                                    <div class="tipo-imagem">
-                                        <img src="images/protetor-autivo-de inserção.jpg" alt="Plug de Espuma">
-                                    </div>
-                                </div>
-                                <div class="tipo-card">
-                                    <div class="tipo-icon">2</div>
-                                    <h4><strong>Concha (Abafador)</strong></h4>
-                                    <p>Cobre toda a <strong>orelha externa</strong>. Com arco ou acoplável ao capacete. Indicado para <strong>ruídos intensos e intermitentes</strong>.</p>
-                                    <div class="tipo-imagem">
-                                        <img src="images/Le casque antibruit Peltor Optime III 3M est….jpg" alt="Abafador Tipo Concha">
-                                    </div>
-                                </div>
-                                <div class="tipo-card">
-                                    <div class="tipo-icon">3</div>
-                                    <h4><strong>Semi-Auricular</strong></h4>
-                                    <p>Encaixa-se <strong>sobre o canal auditivo</strong>, sem entrar. Leve e confortável para <strong>uso moderado</strong>.</p>
-                                    <div class="tipo-imagem">
-                                        <img src="images/protetor-autivo-semi.jpg" alt="Protetor Semi-Auricular">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                <div class="tipo-card">
+                    <div class="tipo-icon">2</div>
+                    <h4><strong>Concha (Abafador)</strong></h4>
+                    <p>Cobre toda a orelha. Arco ou acoplável ao capacete.</p>
+                    <div class="tipo-imagem">
+                        <img src="images/Le casque antibruit Peltor Optime III 3M est….jpg" alt="Abafador Tipo Concha">
                     </div>
                 </div>
-
-                <!-- SLIDE 3: NÍVEIS DE RUÍDO E NRR -->
-                <div class="carousel-item">
-                    <div class="slide-full">
-                        <h2>Cálculo do <strong>NRR</strong> e Níveis de Ruído</h2>
-
-                        <div class="section-block">
-                            <h3 class="section-title"><i class='bx bx-volume-full'></i> Níveis de Ruído e Limites</h3>
-                            <div class="niveis-table">
-                                <div class="nivel-item">
-                                    <div class="nivel-db">80 dB(A)</div>
-                                    <div class="nivel-desc">Conversa alta – <strong>sem obrigatoriedade</strong></div>
-                                </div>
-                                <div class="nivel-item">
-                                    <div class="nivel-db">85 dB(A)</div>
-                                    <div class="nivel-desc"><strong>Obrigatório</strong> por 8h – Ex: britador</div>
-                                </div>
-                                <div class="nivel-item">
-                                    <div class="nivel-db">90 dB(A)</div>
-                                    <div class="nivel-desc">Máximo 4h – Ex: serra circular</div>
-                                </div>
-                                <div class="nivel-item">
-                                    <div class="nivel-db">100 dB(A)</div>
-                                    <div class="nivel-desc">Máximo 1h – Ex: martelo pneumático</div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="section-block">
-                            <h3 class="section-title"><i class='bx bx-calculator'></i> Como Calcular o NRR Efetivo</h3>
-                            <div class="nrr-formula">
-                                <p><strong>Fórmula prática (OSHA):</strong></p>
-                                <p class="formula">NRR Efetivo = (NRR − 7) ÷ 2</p>
-                                <p class="exemplo">Ex: Protetor com NRR 30 → <strong>11,5 dB</strong> de atenuação real</p>
-                            </div>
-                            <div class="nrr-dica">
-                                <i class='bx bxs-bulb'></i>
-                                <p><strong>Dica:</strong> Sempre subtraia <strong>7 dB</strong> por variações de ajuste e divida por <strong>2</strong> para uso real.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- SLIDE 4: USO E INSERÇÃO CORRETA -->
-                <div class="carousel-item">
-                    <div class="slide-full">
-                        <h2><strong>Inserção</strong> Correta do Plug</h2>
-                        <div class="passos-grid">
-                            <div class="passo">
-                                <i class='bx bx-hand'></i>
-                                <h4>1. Lave as mãos</h4>
-                                <p>Evite contaminação e otites.</p>
-                            </div>
-                            <div class="passo">
-                                <i class='bx bx-shape-triangle'></i>
-                                <h4>2. Comprima o plug</h4>
-                                <p>Role entre os dedos até formar um cilindro fino.</p>
-                            </div>
-                            <div class="passo">
-                                <i class='bx bx-up-arrow-alt'></i>
-                                <h4>3. Puxe a orelha</h4>
-                                <p>Com a mão oposta, puxe para cima e para trás.</p>
-                            </div>
-                            <div class="passo">
-                                <i class='bx bx-down-arrow-alt'></i>
-                                <h4>4. Insira profundamente</h4>
-                                <p>Segure por 30s até expandir completamente.</p>
-                            </div>
-                        </div>
-                        <div class="teste-vedacao">
-                            <i class='bx bx-check-shield'></i>
-                            <p><strong>Teste de vedação:</strong> Feche os punhos e grite. Se ouvir sua voz abafada, está correto!</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- SLIDE 5: MANUTENÇÃO E SUBSTITUIÇÃO -->
-                <div class="carousel-item">
-                    <div class="slide-full">
-                        <h2><strong>Manutenção</strong> e Quando Substituir</h2>
-
-                        <div class="section-block">
-                            <h3 class="section-title"><i class='bx bx-wrench'></i> Cuidados Diários</h3>
-                            <div class="checklist">
-                                <div class="check-item"><i class='bx bx-check-circle'></i>
-                                    <p>Limpe <strong>conchas com pano úmido</strong> e sabão neutro</p>
-                                </div>
-                                <div class="check-item"><i class='bx bx-check-circle'></i>
-                                    <p>Descarte <strong>plugs de espuma após uso único</strong></p>
-                                </div>
-                                <div class="check-item"><i class='bx bx-check-circle'></i>
-                                    <p>Troque <strong>almofadas da concha a cada 6 meses</strong></p>
-                                </div>
-                                <div class="check-item"><i class='bx bx-check-circle'></i>
-                                    <p>Armazene em <strong>estojo limpo e seco</strong></p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="section-block">
-                            <h3 class="section-title"><i class='bx bx-refresh'></i> Quando Substituir</h3>
-                            <div class="alertas-grid">
-                                <div class="alerta danger"><i class='bx bx-error'></i>
-                                    <p><strong>Plug rasgado, endurecido ou sujo</strong></p>
-                                </div>
-                                <div class="alerta danger"><i class='bx bx-error'></i>
-                                    <p><strong>Concha com rachadura ou vedação danificada</strong></p>
-                                </div>
-                                <div class="alerta warning"><i class='bx bx-time'></i>
-                                    <p><strong>Após 2 anos</strong> de uso (máximo)</p>
-                                </div>
-                                <div class="alerta warning"><i class='bx bx-volume-mute'></i>
-                                    <p><strong>Perda de atenuação</strong> perceptível</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- SLIDE 6: CONCLUSÃO -->
-                <div class="carousel-item">
-                    <div class="slide-conclusao">
-                        <div class="conclusao-container">
-                            <h2><i class='bx bx-check-double'></i> Conclusão</h2>
-                            <div class="conclusao-card">
-                                <p class="conclusao-texto">
-                                    O <strong>protetor auricular</strong> é o único EPI que previne a <strong>perda auditiva irreversível</strong>. Escolher o <strong>modelo correto</strong>, calcular o <strong>NRR efetivo</strong>, inserir com <strong>técnica adequada</strong>                                    e fazer <strong>manutenção regular</strong> garante proteção real.
-                                </p>
-                                <div class="conclusao-destaques">
-                                    <div class="destaque-item"><i class='bx bx-headphone'></i>
-                                        <p><strong>Tipos:</strong> Plug | Concha | Semi-Auricular</p>
-                                    </div>
-                                    <div class="destaque-item"><i class='bx bx-volume-full'></i>
-                                        <p><strong>NRR:</strong> Use fórmula (NRR−7)/2</p>
-                                    </div>
-                                    <div class="destaque-item"><i class='bx bx-wrench'></i>
-                                        <p><strong>Cuidados:</strong> Higiene e substituição</p>
-                                    </div>
-                                </div>
-                                <div class="conclusao-aviso">
-                                    <i class='bx bxs-error'></i>
-                                    <p><strong>Nunca reutilize plugs de espuma.</strong><br>A <strong>PAIR é irreversível</strong> – previna-se!</p>
-                                </div>
-                                <div class="conclusao-acao">
-                                    <a href="quiz-protetor-auricular.html" class="btn-conclusao">
-                                        <i class='bx bx-trophy'></i> Fazer o Quiz e Ganhar Certificado
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
+                <div class="tipo-card">
+                    <div class="tipo-icon">3</div>
+                    <h4><strong>Semi-Auricular</strong></h4>
+                    <p>Encaixe sobre o canal. Leve, para ruído moderado.</p>
+                    <div class="tipo-imagem">
+                        <img src="images/protetor-autivo-semi.jpg" alt="Protetor Semi-Auricular">
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="aula-block slide-full">
+            <h2>Principais <strong>Riscos</strong> Auditivos no Trabalho</h2>
+            <h3 class="section-title"><i class='bx bx-volume-full'></i> Identificação de Riscos Comuns em Moçambique</h3>
 
-            <!-- CONTROLES -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#aulaCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#aulaCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon"></span>
-            </button>
+            <div class="riscos-grid">
+                <div class="risco-card">
+                    <div class="risco-icon"><i class='bx bx-volume-full'></i></div>
+                    <h4><strong>Ruído Contínuo</strong></h4>
+                    <p>Máquinas, geradores, britadores em minas (Tete) e fábricas (>85 dB).</p>
+                </div>
+                <div class="risco-card">
+                    <div class="risco-icon"><i class='bx bx-bolt-circle'></i></div>
+                    <h4><strong>Ruído de Impacto</strong></h4>
+                    <p>Martelos pneumáticos, explosões em pedreiras (>140 dB picos).</p>
+                </div>
+                <div class="risco-card">
+                    <div class="risco-icon"><i class='bx bx-buildings'></i></div>
+                    <h4><strong>Construção Civil</strong></h4>
+                    <p>Serras, betoneiras, perfuratrizes em obras (Maputo, Beira).</p>
+                </div>
+                <div class="risco-card">
+                    <div class="risco-icon"><i class='bx bx-error-alt'></i></div>
+                    <h4><strong>Uso Incorreto</strong></h4>
+                    <p>Plug mal inserido ou concha solta reduz proteção em <strong>50%</strong>.</p>
+                </div>
+            </div>
 
-            <!-- INDICADORES -->
-            <div class="aula-indicators">
-                <div class="indicator active" data-bs-target="#aulaCarousel" data-bs-slide-to="0"></div>
-                <div class="indicator" data-bs-target="#aulaCarousel" data-bs-slide-to="1"></div>
-                <div class="indicator" data-bs-target="#aulaCarousel" data-bs-slide-to="2"></div>
-                <div class="indicator" data-bs-target="#aulaCarousel" data-bs-slide-to="3"></div>
-                <div class="indicator" data-bs-target="#aulaCarousel" data-bs-slide-to="4"></div>
-                <div class="indicator" data-bs-target="#aulaCarousel" data-bs-slide-to="5"></div>
+            <div class="risco-dica">
+                <i class='bx bxs-bulb'></i>
+                <p><strong>Dica MITESS:</strong> ~12% dos trabalhadores em indústrias moçambicanas relatam zumbido crônico (2024). Use sempre o EPI correto!</p>
+            </div>
+        </div>
+
+        <!-- SEÇÃO 4: NÍVEIS DE RUÍDO E NRR -->
+        <div class="aula-block slide-full">
+            <h2>Cálculo do <strong>NRR</strong> e Níveis de Ruído</h2>
+
+            <h3 class="section-title"><i class='bx bx-volume-full'></i> Limites Legais em Moçambique</h3>
+            <div class="niveis-table">
+                <div class="nivel-item">
+                    <div class="nivel-db">85 dB(A)</div>
+                    <div class="nivel-desc"><strong>Obrigatório</strong> por 8h – Ex: britador</div>
+                </div>
+                <div class="nivel-item">
+                    <div class="nivel-db">90 dB(A)</div>
+                    <div class="nivel-desc">Máximo 4h – Ex: serra circular</div>
+                </div>
+                <div class="nivel-item">
+                    <div class="nivel-db">100 dB(A)</div>
+                    <div class="nivel-desc">Máximo 1h – Ex: martelo pneumático</div>
+                </div>
+            </div>
+
+            <h3 class="section-title"><i class='bx bx-calculator'></i> NRR Efetivo</h3>
+            <div class="nrr-formula">
+                <p><strong>Fórmula (OSHA adaptada):</strong> NRR Efetivo = (NRR − 7) ÷ 2</p>
+                <p class="exemplo">Ex: NRR 30 → <strong>11,5 dB</strong> real</p>
+            </div>
+            <div class="nrr-dica">
+                <i class='bx bxs-bulb'></i>
+                <p><strong>Dica:</strong> Sempre teste a vedação após inserção.</p>
+            </div>
+        </div>
+
+        <!-- SEÇÃO 5: INSERÇÃO CORRETA -->
+        <div class="aula-block slide-full">
+            <h2><strong>Inserção</strong> Correta do Plug</h2>
+            <div class="passos-grid">
+                <div class="passo">
+                    <i class='bx bx-hand'></i>
+                    <h4>1. Lave as mãos</h4>
+                    <p>Evite infecções.</p>
+                </div>
+                <div class="passo">
+                    <i class='bx bx-shape-triangle'></i>
+                    <h4>2. Comprima</h4>
+                    <p>Role até formar cilindro fino.</p>
+                </div>
+                <div class="passo">
+                    <i class='bx bx-up-arrow-alt'></i>
+                    <h4>3. Puxe a orelha</h4>
+                    <p>Para cima e para trás.</p>
+                </div>
+                <div class="passo">
+                    <i class='bx bx-down-arrow-alt'></i>
+                    <h4>4. Insira e segure</h4>
+                    <p>30s até expandir.</p>
+                </div>
+            </div>
+            <div class="teste-vedacao">
+                <i class='bx bx-check-shield'></i>
+                <p><strong>Teste:</strong> Feche os punhos e fale. Voz abafada = vedação OK!</p>
+            </div>
+        </div>
+
+        <!-- SEÇÃO 6: MANUTENÇÃO E SUBSTITUIÇÃO -->
+        <div class="aula-block slide-full">
+            <h2><strong>Manutenção</strong> e Substituição</h2>
+
+            <h3 class="section-title"><i class='bx bx-wrench'></i> Cuidados Diários</h3>
+            <div class="checklist">
+                <div class="check-item"><i class='bx bx-check-circle'></i>
+                    <p>Limpe conchas com <strong>pano úmido</strong></p>
+                </div>
+                <div class="check-item"><i class='bx bx-check-circle'></i>
+                    <p>Descarte <strong>plugs de espuma</strong> após uso</p>
+                </div>
+                <div class="check-item"><i class='bx bx-check-circle'></i>
+                    <p>Troque <strong>almofadas a cada 6 meses</strong></p>
+                </div>
+                <div class="check-item"><i class='bx bx-check-circle'></i>
+                    <p>Armazene em <strong>estojo seco</strong></p>
+                </div>
+            </div>
+
+            <h3 class="section-title"><i class='bx bx-refresh'></i> Quando Substituir</h3>
+            <div class="alertas-grid">
+                <div class="alerta danger"><i class='bx bx-error'></i>
+                    <p><strong>Plug danificado</strong></p>
+                </div>
+                <div class="alerta danger"><i class='bx bx-error'></i>
+                    <p><strong>Concha rachada</strong></p>
+                </div>
+                <div class="alerta warning"><i class='bx bx-time'></i>
+                    <p><strong>2 anos de uso</strong></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- SEÇÃO 7: CONCLUSÃO -->
+        <div class="aula-block slide-conclusao">
+            <div class="conclusao-container">
+                <h2><i class='bx bx-check-double'></i> Conclusão</h2>
+                <div class="conclusao-card">
+                    <p class="conclusao-texto">
+                        O <strong>protetor auricular</strong> previne a <strong>PAIR irreversível</strong>. Identifique o <strong>risco</strong>, escolha o <strong>modelo certo</strong>, insira com <strong>técnica</strong> e faça <strong>manutenção</strong>.
+                    </p>
+                    <div class="conclusao-destaques">
+                        <div class="destaque-item"><i class='bx bx-volume-full'></i>
+                            <p><strong>Riscos:</strong> Contínuo, impacto, construção</p>
+                        </div>
+                        <div class="destaque-item"><i class='bx bx-headphone'></i>
+                            <p><strong>Tipos:</strong> Plug, Concha, Semi</p>
+                        </div>
+                        <div class="destaque-item"><i class='bx bx-wrench'></i>
+                            <p><strong>Cuidados:</strong> Higiene, substituição</p>
+                        </div>
+                    </div>
+                    <div class="conclusao-aviso">
+                        <i class='bx bxs-error'></i>
+                        <p><strong>Nunca reutilize plugs de espuma.</strong><br>A perda auditiva é <strong>permanente</strong>.</p>
+                    </div>
+                    <div class="conclusao-acao">
+                        <a href="quiz.html?aula=protetor-auricular" class="btn-conclusao">
+                            <i class='bx bx-trophy'></i> Jogar Quiz
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
 
         <!-- AÇÕES -->
-        <div class="aula-actions">
-            <a href="quiz-protetor-auricular.html" class="btn-primary">Fazer Quiz</a>
-            <a href="aulas.html" class="btn-secondary"><i class='bx bx-left-arrow-alt'></i> Voltar</a>
+        <div class="aula-actions text-center mt-5 mb-5">
+            <a href="aulas.html" class="btn btn-secondary"><i class='bx bx-left-arrow-alt'></i> Voltar às Aulas</a>
         </div>
     </section>
 
@@ -303,7 +281,7 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>© 2025 - EPI Easy | Feito com dedicação para aprimorar seu conhecimento em Segurança no Trabalho</p>
+            <p>© 2025 - EPI Easy | Feito com dedicação para Moçambique</p>
             <div class="social-icons">
                 <a href="#">
                     <ion-icon name="logo-facebook"></ion-icon>
@@ -321,24 +299,11 @@
     <!-- Scripts -->
     <script src="js/modo_escuro.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/aula-protetor-auricular.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons/7.1.0/dist/ionicons/ionicons.js"></script>
 
     <script>
-        // Sticky header
         window.addEventListener('scroll', () => {
             document.querySelector('header').classList.toggle('sticky', window.scrollY > 0);
-        });
-
-        // Atualiza indicadores
-        const carousel = document.getElementById('aulaCarousel');
-        carousel.addEventListener('slid.bs.carousel', function() {
-            const indicators = document.querySelectorAll('.aula-indicators .indicator');
-            const activeIndex = Array.from(carousel.querySelectorAll('.carousel-item')).findIndex(item => item.classList.contains('active'));
-            indicators.forEach((ind, i) => {
-                ind.classList.toggle('active', i === activeIndex);
-            });
         });
     </script>
 </body>

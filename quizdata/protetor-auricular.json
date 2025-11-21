@@ -1,0 +1,92 @@
+[
+    {
+        "question": "A partir de que nível de ruído o uso de proteção auditiva se torna obrigatório por 8 horas de trabalho, segundo a legislação moçambicana?",
+        "answers": [
+            { "text": "80 dB(A)", "correct": false },
+            { "text": "85 dB(A)", "correct": true },
+            { "text": "90 dB(A)", "correct": false },
+            { "text": "100 dB(A)", "correct": false }
+        ]
+    },
+    {
+        "question": "Qual é a doença ocupacional irreversível que o protetor auricular visa prevenir?",
+        "answers": [
+            { "text": "Silicose", "correct": false },
+            { "text": "Conjuntivite", "correct": false },
+            { "text": "PAIR (Perda Auditiva Induzida por Ruído)", "correct": true },
+            { "text": "Dermatite de contato", "correct": false }
+        ]
+    },
+    {
+        "question": "Qual é a fórmula correta (adaptada da OSHA) para calcular a atenuação real (NRR Efetivo) de um protetor?",
+        "answers": [
+            { "text": "(NRR - 7) ÷ 2", "correct": true },
+            { "text": "NRR ÷ 2", "correct": false },
+            { "text": "NRR - 10", "correct": false },
+            { "text": "(NRR + 5) ÷ 3", "correct": false }
+        ]
+    },
+    {
+        "question": "Segundo a aula, o que acontece com a proteção se o plug estiver mal inserido ou a concha solta?",
+        "answers": [
+            { "text": "A proteção aumenta", "correct": false },
+            { "text": "Não há alteração na proteção", "correct": false },
+            { "text": "A proteção reduz-se em 50%", "correct": true },
+            { "text": "O protetor estraga-se imediatamente", "correct": false }
+        ]
+    },
+    {
+        "question": "Qual é o procedimento correto de manutenção para plugs de espuma (inserção)?",
+        "answers": [
+            { "text": "Lavar com água e sabão", "correct": false },
+            { "text": "Limpar com álcool", "correct": false },
+            { "text": "Descartar após uso único", "correct": true },
+            { "text": "Reutilizar por uma semana", "correct": false }
+        ]
+    },
+    {
+        "question": "Durante a inserção do plug, qual é o movimento correto para abrir o canal auditivo?",
+        "answers": [
+            { "text": "Puxar a orelha para baixo", "correct": false },
+            { "text": "Empurrar a orelha para a frente", "correct": false },
+            { "text": "Puxar a orelha para cima e para trás", "correct": true },
+            { "text": "Não é necessário tocar na orelha", "correct": false }
+        ]
+    },
+    {
+        "question": "Qual é o tempo máximo de exposição permitido para um nível de ruído de 100 dB(A)?",
+        "answers": [
+            { "text": "8 horas", "correct": false },
+            { "text": "4 horas", "correct": false },
+            { "text": "1 hora", "correct": true },
+            { "text": "15 minutos", "correct": false }
+        ]
+    },
+    {
+        "question": "Como se realiza o teste prático de vedação do protetor auricular?",
+        "answers": [
+            { "text": "Olhando no espelho", "correct": false },
+            { "text": "Fechando os punhos e falando (deve ouvir a voz abafada)", "correct": true },
+            { "text": "Saltando para ver se cai", "correct": false },
+            { "text": "Perguntando a um colega", "correct": false }
+        ]
+    },
+    {
+        "question": "Com que frequência devem ser trocadas as almofadas dos protetores tipo Concha (Abafador)?",
+        "answers": [
+            { "text": "A cada 6 meses", "correct": true },
+            { "text": "Nunca precisam ser trocadas", "correct": false },
+            { "text": "A cada 2 anos", "correct": false },
+            { "text": "Mensalmente", "correct": false }
+        ]
+    },
+    {
+        "question": "Qual é o prazo máximo de uso recomendado para substituir o protetor auricular (validade de uso)?",
+        "answers": [
+            { "text": "5 anos", "correct": false },
+            { "text": "Após 2 anos de uso", "correct": true },
+            { "text": "6 meses", "correct": false },
+            { "text": "Indeterminado", "correct": false }
+        ]
+    }
+]

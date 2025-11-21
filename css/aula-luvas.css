@@ -1,6 +1,6 @@
 /* ========================================
-   AULA LUVAS - DESIGN IMERSIVO E PROFISSIONAL
-   Mesmo padrão das aulas anteriores
+   AULA LUVAS - DESIGN IMERSIVO E PROFISSIONAL (SEM CARROSSEL)
+   Mesmo padrão da aula-capacete e botas
    ======================================== */
 
 .aula-section {
@@ -34,14 +34,14 @@
 }
 
 
-/* SLIDE 1: INTRODUÇÃO */
+/* INTRODUÇÃO */
 
 .slide-intro {
     display: grid;
     grid-template-columns: 1fr 400px;
     gap: 60px;
     max-width: 1400px;
-    margin: 0 auto;
+    margin: 0 auto 120px;
     align-items: center;
 }
 
@@ -79,11 +79,11 @@
 }
 
 
-/* SLIDES FULLSCREEN */
+/* SEÇÕES FULL */
 
 .slide-full {
     max-width: 1400px;
-    margin: 0 auto;
+    margin: 0 auto 120px;
     text-align: center;
     padding: 40px 20px;
 }
@@ -177,80 +177,8 @@
     transition: transform 0.4s ease;
 }
 
-.tipo-card:hover .tipo-icon {
-    transform: scale(1.1);
-}
-
 .tipo-card:hover .tipo-imagem img {
     transform: scale(1.05);
-}
-
-
-/* EN 388 */
-
-.en388-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 40px;
-    flex-wrap: wrap;
-    margin: 40px auto;
-    max-width: 900px;
-}
-
-.en388-img {
-    width: 180px;
-    filter: drop-shadow(0 8px 20px rgba(0, 0, 0, 0.1));
-}
-
-.en388-legenda {
-    font-size: 1.05rem;
-    line-height: 1.8;
-    color: #444;
-    text-align: left;
-}
-
-.en388-legenda p {
-    margin: 8px 0;
-}
-
-.en388-legenda strong {
-    color: #2fcdff;
-}
-
-
-/* TABELA DE NÍVEIS */
-
-.niveis-table {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    max-width: 700px;
-    margin: 30px auto;
-}
-
-.nivel-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: white;
-    padding: 18px 25px;
-    border-radius: 20px;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
-    font-size: 1.1rem;
-    border-left: 6px solid #2fcdff;
-}
-
-.nivel-codigo {
-    font-weight: 800;
-    color: #2fcdff;
-    font-size: 1.4rem;
-    font-family: 'Courier New', monospace;
-}
-
-.nivel-desc {
-    color: #444;
-    text-align: right;
 }
 
 
@@ -335,56 +263,11 @@
 }
 
 
-/* INDICADORES E CONTROLES */
-
-.aula-indicators {
-    display: flex;
-    justify-content: center;
-    gap: 16px;
-    margin: 80px 0 40px;
-    flex-wrap: wrap;
-}
-
-.aula-indicators .indicator {
-    width: 70px;
-    height: 8px;
-    background: #ddd;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: all 0.4s ease;
-}
-
-.aula-indicators .indicator.active {
-    background: linear-gradient(90deg, #2fcdff, #1ba8d4);
-    transform: scale(1.3);
-    box-shadow: 0 6px 20px rgba(47, 205, 255, 0.5);
-}
-
-.carousel-control-prev,
-.carousel-control-next {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.9);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-    opacity: 0.9;
-}
-
-.carousel-control-prev {
-    left: 20px;
-}
-
-.carousel-control-next {
-    right: 20px;
-}
-
-
 /* CONCLUSÃO */
 
 .slide-conclusao {
     max-width: 1000px;
-    margin: 0 auto;
-    padding: 40px 20px;
+    margin: 0 auto 80px;
     text-align: center;
 }
 
@@ -499,6 +382,34 @@
 }
 
 
+/* AÇÕES */
+
+.aula-actions {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.btn-secondary {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: #f8f9fa;
+    color: #555;
+    font-weight: 600;
+    padding: 14px 28px;
+    border-radius: 50px;
+    text-decoration: none;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background: #e9ecef;
+    transform: translateY(-3px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+
 /* RESPONSIVO */
 
 @media (max-width: 992px) {
@@ -530,8 +441,86 @@
     .tipo-imagem img {
         height: 140px;
     }
-    .aula-indicators .indicator {
-        width: 50px;
-        height: 6px;
-    }
+}
+
+
+/* ==================== RISCOS (NOVA SEÇÃO) ==================== */
+
+.riscos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.risco-card {
+    background: white;
+    padding: 28px;
+    border-radius: 28px;
+    box-shadow: 0 15px 40px rgba(231, 76, 60, 0.15);
+    transition: all 0.4s ease;
+    border: 1px solid rgba(231, 76, 60, 0.2);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.risco-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 6px;
+    background: linear-gradient(90deg, #e74c3c, #c0392b);
+}
+
+.risco-card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 25px 50px rgba(231, 76, 60, 0.25);
+}
+
+.risco-icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #e74c3c, #c0392b);
+    color: white;
+    font-size: 1.8rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 18px;
+    box-shadow: 0 8px 20px rgba(231, 76, 60, 0.3);
+}
+
+.risco-card h4 {
+    font-size: 1.3rem;
+    color: #222;
+    margin-bottom: 12px;
+}
+
+.risco-card p {
+    font-size: 1.05rem;
+    color: #555;
+    line-height: 1.7;
+}
+
+.dica-risco {
+    background: #fdfd96;
+    padding: 20px;
+    border-radius: 20px;
+    max-width: 800px;
+    margin: 30px auto;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 1.1rem;
+    border-left: 5px solid #f39c12;
+    color: #856404;
+}
+
+.dica-risco i {
+    color: #f39c12;
+    font-size: 1.8rem;
 }

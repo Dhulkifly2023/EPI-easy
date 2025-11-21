@@ -1,0 +1,92 @@
+[
+    {
+        "question": "Segundo a introdução, qual decreto regulamenta a Segurança e Saúde no Trabalho em Moçambique, exigindo luvas certificadas?",
+        "answers": [
+            { "text": "Decreto n.º 45/2014", "correct": true },
+            { "text": "Lei n.º 23/2000", "correct": false },
+            { "text": "Norma ISO 9001", "correct": false },
+            { "text": "Regulamento Geral de Edificações", "correct": false }
+        ]
+    },
+    {
+        "question": "Qual material de luva é o mais indicado para manusear óleos, graxas e solventes?",
+        "answers": [
+            { "text": "Látex", "correct": false },
+            { "text": "Nitrílica", "correct": true },
+            { "text": "Algodão", "correct": false },
+            { "text": "Couro", "correct": false }
+        ]
+    },
+    {
+        "question": "Para trabalhos com vidro e metal que exigem resistência a cortes nível 5, qual luva deve ser usada?",
+        "answers": [
+            { "text": "PVC", "correct": false },
+            { "text": "Látex", "correct": false },
+            { "text": "Kevlar / Aramida", "correct": true },
+            { "text": "Vinil", "correct": false }
+        ]
+    },
+    {
+        "question": "Até qual voltagem máxima as luvas isolantes elétricas (Classe 00 a 4) podem proteger?",
+        "answers": [
+            { "text": "1.000 V", "correct": false },
+            { "text": "10.000 V", "correct": false },
+            { "text": "220 V", "correct": false },
+            { "text": "36.000 V", "correct": true }
+        ]
+    },
+    {
+        "question": "Qual é a recomendação da aula para absorver o suor ao usar luvas para risco químico?",
+        "answers": [
+            { "text": "Aplicar talco industrial", "correct": false },
+            { "text": "Fazer furos na luva externa", "correct": false },
+            { "text": "Usar luva interna de algodão", "correct": true },
+            { "text": "Não usar luvas por muito tempo", "correct": false }
+        ]
+    },
+    {
+        "question": "Como deve ser feita a secagem das luvas após a lavagem com água e sabão neutro?",
+        "answers": [
+            { "text": "Em estufa de alta temperatura", "correct": false },
+            { "text": "Ao ar livre, nunca em estufa", "correct": true },
+            { "text": "Com secador de cabelo", "correct": false },
+            { "text": "Deixando ao sol direto", "correct": false }
+        ]
+    },
+    {
+        "question": "Segundo a Dica MITESS, qual é o prazo para comunicar acidentes com as mãos ao INSS?",
+        "answers": [
+            { "text": "Em até 24 horas", "correct": false },
+            { "text": "Em até 48 horas", "correct": true },
+            { "text": "Em até 7 dias", "correct": false },
+            { "text": "No final do mês", "correct": false }
+        ]
+    },
+    {
+        "question": "Em qual setor moçambicano o risco de lesões por vibração é comum, exigindo luvas acolchoadas?",
+        "answers": [
+            { "text": "Hospitais", "correct": false },
+            { "text": "Agricultura familiar", "correct": false },
+            { "text": "Minas de carvão (Tete)", "correct": true },
+            { "text": "Escritórios", "correct": false }
+        ]
+    },
+    {
+        "question": "As luvas de Couro ou Kevlar são indicadas para queimaduras térmicas pois resistem até:",
+        "answers": [
+            { "text": "100°C", "correct": false },
+            { "text": "250°C", "correct": false },
+            { "text": "500°C", "correct": true },
+            { "text": "1000°C", "correct": false }
+        ]
+    },
+    {
+        "question": "Qual é um sinal de alerta para a substituição imediata das luvas?",
+        "answers": [
+            { "text": "Desgaste visível na palma ou dedos", "correct": true },
+            { "text": "Após 1 semana de uso", "correct": false },
+            { "text": "Se a luva estiver suja por fora", "correct": false },
+            { "text": "Se a luva for de uma cor diferente", "correct": false }
+        ]
+    }
+]
